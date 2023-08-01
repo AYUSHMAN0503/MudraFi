@@ -1,5 +1,8 @@
 # MudraFi
 
+![Logo](logo/logo-transparent-png.png)
+
+
 Theme no 2: DeFi
 
 Idea: NFT Based AI Music Marketplace
