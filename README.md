@@ -1,6 +1,6 @@
 # MudraFi
 
-![Logo](logo/logo-transparent-png.png)
+![Logo](logo/logo-no-background.png)
 
 
 Theme no 2: DeFi
