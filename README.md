@@ -107,6 +107,9 @@ Now, go to the original repository on GitHub and create a pull request from your
 
 ## Copyright
 
-Created for HackaTRON season 5..
+Created for HackaTRON season 5  || All rights reserved by Web3 Sailors.
 
-All rights reserved by Web3 Sailors 
+
+![Logo](logo/logo-transparent-png.png)
+
+
