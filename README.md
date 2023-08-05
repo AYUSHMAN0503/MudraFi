@@ -3,7 +3,7 @@
 ![Logo](logo/logo-no-background.png)
 
 
-Theme no 2: DeFi
+Theme no 2: DeFi (Decentralized Finance)
 
 Idea: NFT Based AI Music Marketplace
 
