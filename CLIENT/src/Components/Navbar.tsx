@@ -16,7 +16,7 @@ export function NavbarDefault() {
     );
   }, []);
  
-  const navList = (
+  const navList1 = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
@@ -38,6 +38,10 @@ export function NavbarDefault() {
           Market
         </a>
       </Typography>
+</ul>
+  );
+      const navList2 = (
+    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
@@ -64,8 +68,9 @@ export function NavbarDefault() {
   return (
     <Navbar className="mx-auto max-w-screen-xl bg-slate-200 backdrop-blur-md text-gray-900 fixed w-full  rounded-2xl mt-2 py-2 px-4 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+      <div className="hidden lg:block">{navList1}</div>
       <img src={Logo} alt="" width={180} />
-        <div className="hidden lg:block">{navList}</div>
+        <div className="hidden lg:block">{navList2}</div>
         
         <IconButton
           variant="text"
@@ -107,7 +112,7 @@ export function NavbarDefault() {
       </div>
       <MobileNav open={openNav}>
         <div className="container mx-auto">
-          {navList}
+          {navList1}{navList2}
           </div>
       </MobileNav>
 
