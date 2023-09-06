@@ -71,86 +71,55 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <div className="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+      <div className="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left justify-end text-lg">
         <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-          <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
-            About
-          </h2>
           <nav className="mb-10 list-none">
             <li className="mt-3">
               <a className="text-white cursor-pointer hover:text-gray-900">
-               Lorem
+              App
               </a>
             </li>
             <li className="mt-3">
               <a className="text-white cursor-pointer hover:text-gray-900">
-              Lorem
+              Swap
               </a>
             </li>
             <li className="mt-3">
               <a className="text-white cursor-pointer hover:text-gray-900">
-              Lorem
+              Tokens
+              </a>
+            </li>
+            <li className="mt-3">
+              <a className="text-white cursor-pointer hover:text-gray-900">
+              Pools
               </a>
             </li>
           </nav>
         </div>
         <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-          <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
-            Lorem
-          </h2>
           <nav className="mb-10 list-none">
             <li className="mt-3">
               <a className="text-white cursor-pointer hover:text-gray-900">
-              Lorem
+              Community
               </a>
             </li>
             <li className="mt-3">
               <a className="text-white cursor-pointer hover:text-gray-900">
-              Lorem
-              </a>
-            </li>
-            <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
-              Lorem
+              Governance
               </a>
             </li>
           </nav>
         </div>
         <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-          <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
-          Lorem
-          </h2>
           <nav className="mb-10 list-none">
             <li className="mt-3">
               <a className="text-white cursor-pointer hover:text-gray-900">
-              Lorem
+              Privacy Policy
               </a>
             </li>
             <li className="mt-3">
               <a className="text-white cursor-pointer hover:text-gray-900">
-              Lorem
-              </a>
-            </li>
-            <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
-              Lorem
-              </a>
-            </li>
-          </nav>
-        </div>
-        <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-          <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
-          Lorem
-          </h2>
-          <nav className="mb-10 list-none">
-            <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
-              Lorem
-              </a>
-            </li>
-            <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
-              Lorem
+              About us
               </a>
             </li>
             <li className="mt-3">
