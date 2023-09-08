@@ -6,6 +6,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
  import Logo from "../../logo/logo-no-background.png"
+ import {Link} from"react-router-dom";
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
  
@@ -69,7 +70,7 @@ export function NavbarDefault() {
     <Navbar className="mx-auto max-w-screen-xl bg-white/30 backdrop-blur-md text-white/90 fixed w-full  rounded-2xl mt-2 py-2 px-4 lg:px-8 lg:py-4 z-10">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
       <div className="hidden lg:block">{navList1}</div>
-      <img src={Logo} alt="" width={200} />
+      <Link to="/"><img src={Logo} alt="" width={200} /></Link>
         <div className="hidden lg:block">{navList2}</div>
         
         <IconButton

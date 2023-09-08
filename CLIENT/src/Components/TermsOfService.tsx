@@ -1,8 +1,9 @@
 
 import { LinearGradient } from 'react-text-gradients';
-
+import Animatedpage from "./AnimatedPage";
 const TermsOfService = () => {
   return (
+   <Animatedpage>
   <div className="bg-app-bg text-white p-6">
       <h1 className="text-6xl font-bold mb-7 text-center pt-2">< LinearGradient gradient={['to left', '#17acff ,#ff68f0']}>MudraFi Terms of Service</LinearGradient></h1>
 
@@ -78,6 +79,7 @@ const TermsOfService = () => {
         By using MudraFi, you acknowledge that you have read, understood, and agree to these Terms of Service.
       </p>
     </div>
+    </Animatedpage>
   );
 };
 
