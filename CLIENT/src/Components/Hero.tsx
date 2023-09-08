@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from 'typewriter-effect';
 
 
-const Home: React.FC = () => {
+const Hero: React.FC = () => {
     return (
         <div className="relative" id="home">
             <div aria-hidden="true" className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20 ">
@@ -44,4 +44,4 @@ const Home: React.FC = () => {
     );
 };
 
-export default Home;
+export default Hero;
