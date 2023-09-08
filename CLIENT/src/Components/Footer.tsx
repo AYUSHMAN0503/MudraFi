@@ -1,9 +1,11 @@
-import Logo from "../../logo/logo-no-background.png"
-import {Link} from "react-router-dom"
+import Logo from "../../logo/logo-no-background.png";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
+
   const backgroundImageUrl =
     "https://images.unsplash.com/photo-1615992174118-9b8e9be025e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80";
 
@@ -110,56 +112,52 @@ const Footer = () => {
           <nav className="mb-10 list-none">
             <li className="mt-3">
               <a className="text-white cursor-pointer">
-              Community
-              </a>
-            </li>
-            <li className="mt-3">
-              <a className="text-white cursor-pointer">
-              Governance
-              </a>
-            </li>
-          </nav>
-        </div>
-        <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-          <nav className="mb-10 list-none">
-            <li className="mt-3">
-              <a className="text-white cursor-pointer">
-              About us
-              </a>
-            </li>
-            <li className="mt-3">
-              <Link to="/privacypolicy" className="text-white cursor-pointer" onClick={scrollToTop}>
-              Privacy Policy
-              </Link>
-            </li>
-            <li className="mt-3">
-              <Link to="/termsofservice" className="text-white cursor-pointer" onClick={scrollToTop}>
-              Terms of Service
-              </Link>
-            </li>
-            <li className="mt-3">
-              <a className="text-white cursor-pointer">
-              Review
-              </a>
-            </li>
-          </nav>
-        </div>
+              Community </a>
+                  </li>
+                  <li className="mt-3">
+                    <a className="text-white cursor-pointer">Governance</a>
+                  </li>
+                </nav>
+              </div>
+              <div className="w-full px-4 lg:w-1/4 md:w-1/2">
+                <nav className="mb-10 list-none">
+                  <li className="mt-3">
+                    <a className="text-white cursor-pointer">About us</a>
+                  </li>
+                  <li className="mt-3">
+                    <Link to="/privacypolicy" className="text-white cursor-pointer" onClick={scrollToTop}>
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li className="mt-3">
+                    <Link to="/termsofservice" className="text-white cursor-pointer" onClick={scrollToTop}>
+                      Terms of Service
+                    </Link>
+                  </li>
+                  <li className="mt-3">
+                    <a className="text-white cursor-pointer">Review</a>
+                  </li>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div className="container px-5 py-4 mx-auto">
+            <p className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-400 capitalize xl:text-center">
+              © 2023 MudraFi. All rights reserved | Created by WEB3 SAILORS for HackaTRON.
+            </p>
+            <p className="text-sm text-white mt-3">
+              IMPORTANT DISCLAIMER: All content provided herein our website, hyperlinked sites, associated applications, forums, blogs, convivial media accounts and other platforms (“Site”) is for your general information only, procured from third party sources. We make no warranties of any kind in cognation to our content, including but not inhibited to precision and updatedness. No part of the content that we provide constitutes financial exhortation, licit exhortation or any other form of exhortation denoted for your concrete reliance for any purport. Any utilization or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analyse and verify our content afore relying on them. Trading is a highly precarious activity that can lead to major losses, please consequently consult your financial advisor afore making any decision. No content on our Site is designated to be a solicitation or offer.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
-    <hr />
-    <div className="container px-5 py-4 mx-auto">
-        <p className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-400 capitalize xl:text-center">
-          © 2023 MudraFi. All rights reserved | Created by WEB3 SAILORS for HackaTRON.{" "}
-        </p>
-        <p className="text-sm text-white mt-3">
-        IMPORTANT DISCLAIMER: All content provided herein our website, hyperlinked sites, associated applications, forums, blogs, convivial media accounts and other platforms (“Site”) is for your general information only, procured from third party sources. We make no warranties of any kind in cognation to our content, including but not inhibited to precision and updatedness. No part of the content that we provide constitutes financial exhortation, licit exhortation or any other form of exhortation denoted for your concrete reliance for any purport. Any utilization or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analyse and verify our content afore relying on them. Trading is a highly precarious activity that can lead to major losses, please consequently consult your financial advisor afore making any decision. No content on our Site is designated to be a solicitation or offer.
-        </p>
-      </div>
-  </footer>
-</div>
+  );
+};
 
-    </div>
-  )
-}
+export default Footer;
 
-export default Footer
+
+
+{/*IMPORTANT DISCLAIMER: All content provided herein our website, hyperlinked sites, associated applications, forums, blogs, convivial media accounts and other platforms (“Site”) is for your general information only, procured from third party sources. We make no warranties of any kind in cognation to our content, including but not inhibited to precision and updatedness. No part of the content that we provide constitutes financial exhortation, licit exhortation or any other form of exhortation denoted for your concrete reliance for any purport. Any utilization or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analyse and verify our content afore relying on them. Trading is a highly precarious activity that can lead to major losses, please consequently consult your financial advisor afore making any decision. No content on our Site is designated to be a solicitation or offer. */}
