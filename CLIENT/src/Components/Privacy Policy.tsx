@@ -1,7 +1,9 @@
 import { LinearGradient } from 'react-text-gradients';
-
+import Animatedpage from './AnimatedPage';
 const PrivacyPolicy = () => {
+ 
   return (
+    <Animatedpage>
     <div className="bg-app-bg text-white p-6">
       <h1 className="text-6xl font-bold mb-7 text-center pt-2">
         <LinearGradient gradient={['to left', '#17acff ,#ff68f0']} className="gradient-title">
@@ -226,6 +228,7 @@ const PrivacyPolicy = () => {
         <li>By email: aayushyakumar404@gmail.com</li>
       </ul>
     </div>
+    </Animatedpage>
   );
 };
 

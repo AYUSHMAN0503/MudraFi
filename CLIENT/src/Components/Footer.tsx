@@ -1,5 +1,10 @@
 import Logo from "../../logo/logo-no-background.png"
+import {Link} from "react-router-dom"
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
+  
   return (
     <div>
         <div className="flex items-end w-full mt-20 bg-black opacity-80">
@@ -7,7 +12,7 @@ const Footer = () => {
     <div className="container flex flex-col flex-wrap px-5 pt-20 pb-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
       <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
         <a className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
-         <img src={Logo} alt="" width={200}/>
+       <Link to="/"> <img src={Logo} alt="" width={200} onClick={scrollToTop} /></Link> 
         </a>
         <p className="mt-2 text-sm text-white">Lorem ipsum dolor sit amet.</p>
         <div className="mt-4">
@@ -117,14 +122,14 @@ const Footer = () => {
               </a>
             </li>
             <li className="mt-3">
-              <a className="text-white cursor-pointer">
+              <Link to="/privacypolicy" className="text-white cursor-pointer" onClick={scrollToTop}>
               Privacy Policy
-              </a>
+              </Link>
             </li>
             <li className="mt-3">
-              <a className="text-white cursor-pointer">
+              <Link to="/termsofservice" className="text-white cursor-pointer" onClick={scrollToTop}>
               Terms of Service
-              </a>
+              </Link>
             </li>
           </nav>
         </div>
