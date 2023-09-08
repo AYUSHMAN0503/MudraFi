@@ -2,17 +2,17 @@ import Logo from "../../logo/logo-no-background.png"
 const Footer = () => {
   return (
     <div>
-        <div className="flex items-end w-full mt-20 bg-indigo-300">
+        <div className="flex items-end w-full mt-20 bg-black opacity-80">
   <footer className="w-full text-gray-700 body-font">
-    <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+    <div className="container flex flex-col flex-wrap px-5 pt-20 pb-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
       <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
         <a className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
-         <img src={Logo} alt="" width={200} />
+         <img src={Logo} alt="" width={200}/>
         </a>
         <p className="mt-2 text-sm text-white">Lorem ipsum dolor sit amet.</p>
         <div className="mt-4">
           <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-            <a className="tewhite text-white cursor-pointer hover:text-gray-700">
+            <a className="tewhite text-white cursor-pointer ">
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -24,7 +24,7 @@ const Footer = () => {
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
               </svg>
             </a>
-            <a className="ml-3 text-white cursor-pointer hover:text-gray-700">
+            <a className="ml-3 text-white cursor-pointer ">
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -36,7 +36,7 @@ const Footer = () => {
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
             </a>
-            <a className="ml-3 text-white cursor-pointer hover:text-gray-700">
+            <a className="ml-3 text-white cursor-pointer">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -50,7 +50,7 @@ const Footer = () => {
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
               </svg>
             </a>
-            <a className="ml-3 text-white cursor-pointer hover:text-gray-700">
+            <a className="ml-3 text-white cursor-pointer ">
               <svg
                 fill="currentColor"
                 stroke="currentColor"
@@ -74,22 +74,22 @@ const Footer = () => {
         <div className="w-full px-4 lg:w-1/4 md:w-1/2">
           <nav className="mb-10 list-none">
             <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
+              <a className="text-white cursor-pointer">
               App
               </a>
             </li>
             <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
+              <a className="text-white cursor-pointer">
               Swap
               </a>
             </li>
             <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
+              <a className="text-white cursor-pointer">
               Tokens
               </a>
             </li>
             <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
+              <a className="text-white cursor-pointer">
               Pools
               </a>
             </li>
@@ -98,12 +98,12 @@ const Footer = () => {
         <div className="w-full px-4 lg:w-1/4 md:w-1/2">
           <nav className="mb-10 list-none">
             <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
+              <a className="text-white cursor-pointer">
               Community
               </a>
             </li>
             <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
+              <a className="text-white cursor-pointer">
               Governance
               </a>
             </li>
@@ -112,17 +112,17 @@ const Footer = () => {
         <div className="w-full px-4 lg:w-1/4 md:w-1/2">
           <nav className="mb-10 list-none">
             <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
+              <a className="text-white cursor-pointer">
               About us
               </a>
             </li>
             <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
+              <a className="text-white cursor-pointer">
               Privacy Policy
               </a>
             </li>
             <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
+              <a className="text-white cursor-pointer">
               Terms of Service
               </a>
             </li>
@@ -130,13 +130,12 @@ const Footer = () => {
         </div>
       </div>
     </div>
-    <div className="bg-white">
-      <div className="container px-5 py-4 mx-auto">
-        <p className="text-sm text-gray-700 capitalize xl:text-center">
+    <hr />
+    <div className="container px-5 py-4 mx-auto">
+        <p className="text-sm text-white capitalize xl:text-center">
           © 2023 All rights reserved. Created by WEB3 SAILORS for HackaTRON.{" "}
         </p>
       </div>
-    </div>
   </footer>
 </div>
 
