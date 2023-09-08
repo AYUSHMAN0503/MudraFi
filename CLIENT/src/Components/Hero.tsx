@@ -22,7 +22,7 @@ const Home: React.FC = () => {
                                     loop: true,
                                 }}
                             /></h1>
-                        <p className="mt-8 text-white dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta!</p>
+                        <p className="mt-8 text-white dark:text-gray-300">Haan main ruka hoon, tu ja chukka hai..Haan main ruka hoon, tu ja chukka hai, Choo lo mujhe tum kabhi, kho na jaoon main raat din, Nazaron main tum ho basey, ho basey </p>
                         <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
                             <a
                                 href="#"

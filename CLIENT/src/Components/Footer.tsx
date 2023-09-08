@@ -1,4 +1,3 @@
-import React from 'react'
 import Logo from "../../logo/logo-no-background.png"
 const Footer = () => {
   return (
@@ -114,27 +113,27 @@ const Footer = () => {
           <nav className="mb-10 list-none">
             <li className="mt-3">
               <a className="text-white cursor-pointer hover:text-gray-900">
-              Privacy Policy
-              </a>
-            </li>
-            <li className="mt-3">
-              <a className="text-white cursor-pointer hover:text-gray-900">
               About us
               </a>
             </li>
             <li className="mt-3">
               <a className="text-white cursor-pointer hover:text-gray-900">
-              Lorem
+              Privacy Policy
+              </a>
+            </li>
+            <li className="mt-3">
+              <a className="text-white cursor-pointer hover:text-gray-900">
+              Terms of Service
               </a>
             </li>
           </nav>
         </div>
       </div>
     </div>
-    <div className="bg-gray-300">
+    <div className="bg-white">
       <div className="container px-5 py-4 mx-auto">
         <p className="text-sm text-gray-700 capitalize xl:text-center">
-          © 2023 All rights reserved{" "}
+          © 2023 All rights reserved. Created by WEB3 SAILORS for HackaTRON.{" "}
         </p>
       </div>
     </div>
