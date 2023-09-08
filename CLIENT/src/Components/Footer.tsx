@@ -126,13 +126,18 @@ const Footer = () => {
               Terms of Service
               </a>
             </li>
+            <li className="mt-3">
+              <a className="text-white cursor-pointer">
+              Review
+              </a>
+            </li>
           </nav>
         </div>
       </div>
     </div>
     <hr />
     <div className="container px-5 py-4 mx-auto">
-        <p className="text-sm text-white capitalize xl:text-center">
+        <p className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-400 capitalize xl:text-center">
           © 2023 All rights reserved. Created by WEB3 SAILORS for HackaTRON.{" "}
         </p>
       </div>
