@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
           <div className="relative pt-16 ml-auto">
             <div className="lg:w-2/3 text-center mx-auto">
-              <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-400 font-bold text-4xl md:text-6xl xl:text-7xl">
+              <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-400 font-bold text-4xl md:text-6xl xl:text-7xl pb-3">
                 A Protocol for
                 <Typewriter
                   options={{
@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
                   }}
                 />
               </h1>
-              <p className="mt-7 bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-400">
+              <p className="mt-5 bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-400">
                 Haan main ruka hoon, tu ja chukka hai..Haan main ruka hoon, tu ja
                 chukka hai, Choo lo mujhe tum kabhi, kho na jaoon main raat din,
                 Nazaron main tum ho basey, ho basey
