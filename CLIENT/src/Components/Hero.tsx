@@ -12,7 +12,7 @@ const Home: React.FC = () => {
             <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
                 <div className="relative pt-36 ml-auto">
                     <div className="lg:w-2/3 text-center mx-auto">
-                        <h1 className="text-white font-bold text-4xl md:text-6xl xl:text-7xl">
+                        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-white to-orange-300 font-bold text-4xl md:text-6xl xl:text-7xl">
 
                             A Protocol for
                             <Typewriter
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
                                     loop: true,
                                 }}
                             /></h1>
-                        <p className="mt-8 text-white dark:text-gray-300">Haan main ruka hoon, tu ja chukka hai..Haan main ruka hoon, tu ja chukka hai, Choo lo mujhe tum kabhi, kho na jaoon main raat din, Nazaron main tum ho basey, ho basey </p>
+                        <p className="mt-8 text-transparent bg-clip-text bg-gradient-to-r from-white to-orange-400 ">Haan main ruka hoon, tu ja chukka hai..Haan main ruka hoon, tu ja chukka hai, Choo lo mujhe tum kabhi, kho na jaoon main raat din, Nazaron main tum ho basey, ho basey </p>
                         <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
                             <a
                                 href="#"
