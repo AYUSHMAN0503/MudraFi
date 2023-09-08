@@ -138,7 +138,10 @@ const Footer = () => {
     <hr />
     <div className="container px-5 py-4 mx-auto">
         <p className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-400 capitalize xl:text-center">
-          © 2023 All rights reserved. Created by WEB3 SAILORS for HackaTRON.{" "}
+          © 2023 MudraFi. All rights reserved | Created by WEB3 SAILORS for HackaTRON.{" "}
+        </p>
+        <p className="text-sm text-white mt-3">
+        IMPORTANT DISCLAIMER: All content provided herein our website, hyperlinked sites, associated applications, forums, blogs, convivial media accounts and other platforms (“Site”) is for your general information only, procured from third party sources. We make no warranties of any kind in cognation to our content, including but not inhibited to precision and updatedness. No part of the content that we provide constitutes financial exhortation, licit exhortation or any other form of exhortation denoted for your concrete reliance for any purport. Any utilization or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analyse and verify our content afore relying on them. Trading is a highly precarious activity that can lead to major losses, please consequently consult your financial advisor afore making any decision. No content on our Site is designated to be a solicitation or offer.
         </p>
       </div>
   </footer>
