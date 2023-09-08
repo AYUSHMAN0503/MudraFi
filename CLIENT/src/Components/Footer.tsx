@@ -4,10 +4,16 @@ const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
-  
+  const backgroundImageUrl =
+    "https://images.unsplash.com/photo-1615992174118-9b8e9be025e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80";
+
   return (
     <div>
-        <div className="flex items-end w-full mt-20 bg-black opacity-80">
+        <div className="flex items-end w-full " style={{
+            backgroundImage: `url('${backgroundImageUrl}')`,
+            backgroundSize: "cover",
+            backgroundPosition: "bottom",
+            width: "100%",}}>
   <footer className="w-full text-gray-700 body-font">
     <div className="container flex flex-col flex-wrap px-5 pt-20 pb-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
       <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
