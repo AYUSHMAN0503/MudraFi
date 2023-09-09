@@ -27,6 +27,8 @@ const Hero: React.FC = () => {
                 />
               </h1>
               <p className="mt-5 bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-400">
+                Choo lo jo mujhe tum kabhi, kho na jaoon main raat din.
+                Nazaron main tum ho basey, Keh do jo tum ek baar, mere ho bas tum mere, Nazaron main tum ho basey!
                 Haan main ruka hoon, tu ja chukka hai..Haan main ruka hoon, tu
                 ja chukka hai, Choo lo mujhe tum kabhi, kho na jaoon main raat
                 din, Nazaron main tum ho basey, ho basey
