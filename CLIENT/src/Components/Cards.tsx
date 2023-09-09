@@ -8,12 +8,11 @@ interface SingleCardProps {
 const SingleCard: React.FC<SingleCardProps> = ({ CardTitle }) => {
   return (
     <>
-      <div className="overflow-hidden bg-white rounded-lg">
+      <div className="overflow-hidden bg-transparent shadow-lg shadow-slate-300  mx-5 rounded-lg">
         <div className="p-8 text-center sm:p-9 md:p-7 xl:p-9">
           <h3>
             <a
-              href="/#"
-              className="mb-4 block text-xl font-semibold text-dark hover:text-primary sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
+              className="mb-4 block text-xl font-semibold text-white  sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
             >
               {CardTitle}
             </a>
