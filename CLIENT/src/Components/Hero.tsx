@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
       </div>
       <div className="bg-cover bg-center flex  justify-center items-center mb-0 mt-20">
         <div
-          className=" p-24 pl-20" style={{
+          className=" p-24 pl-4 lg:pl-20 " style={{
             backgroundImage: `url('${backgroundImageUrl}')`,
             backgroundSize: "cover",
             backgroundPosition: "top",

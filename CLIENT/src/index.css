@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
 
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,3 +35,5 @@ html,body{
    background-color:rgb(15 23 42 / var(--tw-bg-opacity));
   ;
 }
+
+
