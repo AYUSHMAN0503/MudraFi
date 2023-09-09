@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { NavbarDefault } from "./Components/Navbar";
-import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
 import TermsOfService from "./Components/TermsOfService";
 import PrivacyPolicy from "./Components/Privacy Policy";
+import Home from "./Components/Home";
 const App = () => {
   return (
     <div>
@@ -15,7 +15,7 @@ const App = () => {
         </div>
 
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<Home />} />
           <Route path="/termsofservice" element={<TermsOfService />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         </Routes>
