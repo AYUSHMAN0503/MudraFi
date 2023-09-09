@@ -31,7 +31,7 @@ const Footer = () => {
                 </Link>
               </a>
               <p className="mt-2 text-sm text-white">
-                Lorem ipsum dolor sit amet.
+                Your Asset Management Dex.
               </p>
               <div className="mt-4">
                 <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
