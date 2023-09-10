@@ -2,6 +2,7 @@ import React from "react";
 import Swap from "../assets/92.png"
 import Trading from "../assets/Trading-PNG.png"
 import AI from "../assets/png-artificial-intelligence-science-artificial-brain-d-5bd15b5a1b5ef6.6360244115404470661121.png"
+import { motion } from "framer-motion";
 const Cards = () => {
   return (
     <section className="pt-20 pb-12 mx-10 justify-center items-center flex ">
@@ -35,7 +36,9 @@ const ServiceCard = ({ picture, title ,desc}: { picture:any, title: any, desc:an
   return (
     <>
       <div className="w-full px-4 md:w-1/2 lg:w-1/3 h-max ">
-        <div className="mb-8 rounded-[20px] bg-transparent backdrop-blur-md p-10 pt-0 shadow-lg shadow-slate-400  md:px-7 xl:px-10">
+        <motion.div className="mb-8 rounded-[20px] bg-transparent backdrop-blur-md p-10 pt-0 shadow-lg shadow-orange-500  md:px-7 xl:px-10 "
+         whileHover={{ scale: 1.05 }}
+         transition={{ type: "spring", stiffness: 400, damping: 10 }}>
           <div
             className={` flex items-center justify-center rounded-2xl scale-90`}
           ><img src={picture} alt="" />
@@ -43,7 +46,7 @@ const ServiceCard = ({ picture, title ,desc}: { picture:any, title: any, desc:an
           </div>
           <h4 className="mb-3 text-3xl flex items-center justify-center font-semibold text-white">{title}</h4>
           <p className="text-white flex items-center justify-center text-sm "> {desc}</p>
-        </div>
+        </motion.div>
       </div>
     </>
   );
