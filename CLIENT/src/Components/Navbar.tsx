@@ -88,7 +88,7 @@ export function NavbarDefault() {
       );
  
   return (
-    <Navbar className="max-w-full bg-white/30 backdrop-blur-md text-white/90 fixed rounded-2xl mt-2 py-2 px-6 lg:px-20 lg:py-4">
+    <Navbar className="max-w-full bg-white/30 backdrop-blur-md text-white/90 fixed rounded-2xl mt-2 py-2 px-6 lg:px-20 lg:py-4 z-10">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
       <div className="hidden lg:block">{navList1}</div>
       <Link to="/"><img src={Logo} alt="" width={200} /></Link>
