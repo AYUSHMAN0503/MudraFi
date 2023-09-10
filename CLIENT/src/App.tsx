@@ -4,6 +4,7 @@ import Footer from "./Components/Footer";
 import TermsOfService from "./Components/TermsOfService";
 import PrivacyPolicy from "./Components/Privacy Policy";
 import AboutUs from "./Components/AboutUs";
+import ReviewPage from "./Components/ReviewPage";
 
 import Home from "./Components/Home";
 
@@ -20,6 +21,8 @@ const App = () => {
           <Route path="/termsofservice" element={<TermsOfService />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/ReviewPage" element={<ReviewPage />} />
+
         </Routes>
 
         <Footer />

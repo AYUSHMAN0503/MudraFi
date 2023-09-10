@@ -150,7 +150,13 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mt-3">
-                    <a className="text-white cursor-pointer">Review</a>
+                    <Link
+                      to="/ReviewPage" 
+                      className="text-white cursor-pointer"
+                      onClick={scrollToTop}
+                      >
+                        Review
+                    </Link>
                   </li>
                 </nav>
               </div>
