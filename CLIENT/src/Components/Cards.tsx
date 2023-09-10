@@ -1,51 +1,54 @@
 import React from "react";
+import Swap from "../assets/92.png"
+import Trading from "../assets/Trading-PNG.png"
+import AI from "../assets/png-artificial-intelligence-science-artificial-brain-d-5bd15b5a1b5ef6.6360244115404470661121.png"
+import { motion } from "framer-motion";
+const Cards = () => {
+  return (
+    <section className="pt-20 pb-12 mx-10 justify-center items-center flex ">
+      <div className="container">
+        <div className="flex flex-wrap -mx-4">
+          <ServiceCard
+            title="Swap Tokens"
+           picture={Swap}
+           desc="A place to earn and gain assets"
+          />
+          <ServiceCard
+            title="Trade and Earn"
+            picture={Trading}
+            desc="Give liquidity on MudraFi and earn fees on swaps"
+          />
+          <ServiceCard
+            title="Personalize AI"
+            picture={AI}
+            desc="Enable AI to become your crypto and trade adviser"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
 
-interface SingleCardProps {
-  CardTitle: string;
-  CardContent: string;
-}
+export default Cards;
 
-const SingleCard: React.FC<SingleCardProps> = ({ CardTitle }) => {
+const ServiceCard = ({ picture, title ,desc}: { picture:any, title: any, desc:any}) => {
+  
   return (
     <>
-      <div className="overflow-hidden bg-transparent shadow-lg shadow-slate-300  mx-5 rounded-lg">
-        <div className="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-          <h3>
-            <a
-              className="mb-4 block text-xl font-semibold text-white  sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
-            >
-              {CardTitle}
-            </a>
-          </h3>
-          <p className="text-base leading-relaxed mb-7 text-body-color"></p>
-        </div>
+      <div className="w-full px-4 md:w-1/2 lg:w-1/3 h-max ">
+        <motion.div className="mb-8 rounded-[20px] bg-transparent backdrop-blur-md p-10 pt-0 shadow-lg shadow-orange-500  md:px-7 xl:px-10 "
+         whileHover={{ scale: 1.05 }}
+         transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+          <div
+            className={` flex items-center justify-center rounded-2xl scale-90`}
+          ><img src={picture} alt="" />
+            
+          </div>
+          <h4 className="mb-3 text-3xl flex items-center justify-center font-semibold text-white">{title}</h4>
+          <p className="text-white flex items-center justify-center text-sm "> {desc}</p>
+        </motion.div>
       </div>
     </>
   );
 };
 
-const Card: React.FC = () => {
-  return (
-    <>
-      <section className="pt-20 lg:pt-[120px] pb-10 lg:pb-20 h-full bg-transparent flex justify-center">
-        <div className="container grid sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
-          <SingleCard
-            CardTitle=" Swap Tokens"
-            CardContent="A place to earn and gain assets"
-          />
-
-          <SingleCard
-            CardTitle="Trade and Earn"
-            CardContent="Give liquidity on MudraFi and earn fees on swaps"
-          />
-          <SingleCard
-            CardTitle="Personalize AI"
-            CardContent="Enable AI to become your crypto and trade adviser"
-          />
-        </div>
-      </section>
-    </>
-  );
-};
-
-export default Card;
