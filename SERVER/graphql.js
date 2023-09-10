@@ -5,3 +5,4 @@ export const ADD_REVIEW_MUTATION = gql`
     addReview(name: $name, email: $email, review: $review)
   }
 `;
+

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useMutation } from "@apollo/client";
+import { ADD_REVIEW_MUTATION } from "";
 
 const ReviewPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -6,27 +8,35 @@ const ReviewPage: React.FC = () => {
     email: "",
     review: "",
   });
-
   const { name, email, review } = formData;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [addReview] = useMutation(ADD_REVIEW_MUTATION);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (name && email && review) {
-      console.log("Submitting data:", formData);
-    } else {
+    if (!name || !email || !review) {
       alert("Please fill in all fields.");
+      return;
+    }
+
+    try {
+      // GraphQL mutation 
+      await addReview({ variables: { name, email, review } });
+      console.log("Review added successfully!");
+      setFormData({ name: "", email: "", review: "" });
+    } catch (error) {
+      console.error("Error adding review:", error);
     }
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
     });
   };
+
 
   return (
     <div className="container mx-auto p-5">
