@@ -36,7 +36,7 @@ const TeamMemberCard: React.FC<TeamMember> = ({
     <div
       className={`${
         expanded ? "lg:w-1/10 " : "lg:w-1/10 "
-      } lg:p-2 w-full p-2 lg:p-4 cursor-pointer transition-transform transform hover:scale-105
+      } lg:p-2 w-full p-2 cursor-pointer transition-transform transform hover:scale-105
       2xl:w-1/6 2xl:p-6`}
       onClick={handleCardClick}
     >

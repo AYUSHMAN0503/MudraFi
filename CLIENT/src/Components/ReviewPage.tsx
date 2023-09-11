@@ -45,10 +45,7 @@ const ReviewPage: React.FC = () => {
       </h1>
       <div className="container mx-auto text-white p-2">
         <p className="mx-auto">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat rerum
-          aliquam sed, facilis porro vel doloremque id veniam officia incidunt
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
-          reiciendis.
+        Cultivate your perspective in this space. We eagerly await your insights and reflections. Your valuable input is pivotal in fostering constructive discussions and enhancing our shared understanding. Please, share your thoughts and let's embark on a fruitful exchange of ideas.
         </p>
 
         <form onSubmit={handleSubmit}>
