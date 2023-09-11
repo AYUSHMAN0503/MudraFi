@@ -3,16 +3,18 @@ import Swap from "../assets/92.png"
 import Trading from "../assets/Trading-PNG.png"
 import AI from "../assets/png-artificial-intelligence-science-artificial-brain-d-5bd15b5a1b5ef6.6360244115404470661121.png"
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 const Cards = () => {
   return (
     <section className="pt-20 pb-12 mx-10 justify-center items-center flex ">
       <div className="container">
         <div className="flex flex-wrap -mx-4">
-          <ServiceCard
+            <ServiceCard
             title="Swap Tokens"
-           picture={Swap}
-           desc="A place to earn and gain assets"
-          />
+            picture={Swap}
+            desc="A place to earn and gain assets"
+            />
           <ServiceCard
             title="Trade and Earn"
             picture={Trading}

@@ -12,9 +12,16 @@ const Swap: React.FC = () => {
     setInputAmount('');
   };
 
+  const containerStyle = {
+    boxShadow: '0 0 10px #ff7f00',
+    width: '90%',
+    maxWidth: '600px',
+    margin: '0 auto',
+  };
+
   return (
     <div className="flex items-center justify-center h-screen bg-app-bg">
-      <div className="container mx-auto p-5 bg-white rounded shadow-lg w-96 h-96">
+      <div style={containerStyle} className="container mx-auto p-5 bg-white rounded shadow-lg h-96 border-orange-400 border-2 shadow-xl hover:border-orange-500 hover:shadow-2xl transition duration-500 ease-in-out">
         <h1 className="text-3xl font-bold mb-5 text-orange-400">Swap</h1>
         <div className="mb-5">
           <label className="block text-gray-700">From (estimated)</label>
