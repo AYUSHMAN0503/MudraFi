@@ -27,7 +27,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-xl">
+        <a href="/SwapInterface" className="flex items-center text-xl">
           Swap
         </a>
       </Typography>

@@ -97,9 +97,6 @@ const Footer = () => {
               <div className="w-full px-4 lg:w-1/4 md:w-1/2">
                 <nav className="mb-10 list-none">
                   <li className="mt-3">
-                    <a className="text-white cursor-pointer">App</a>
-                  </li>
-                  <li className="mt-3">
                     <a className="text-white cursor-pointer">Swap</a>
                   </li>
                   <li className="mt-3">
@@ -113,15 +110,8 @@ const Footer = () => {
               <div className="w-full px-4 lg:w-1/4 md:w-1/2">
                 <nav className="mb-10 list-none">
                   <li className="mt-3">
-                    <a className="text-white cursor-pointer">Community </a>
+                    <a className="text-white cursor-pointer">AI Analytics </a>
                   </li>
-                  <li className="mt-3">
-                    <a className="text-white cursor-pointer">Governance</a>
-                  </li>
-                </nav>
-              </div>
-              <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-                <nav className="mb-10 list-none">
                   <li className="mt-3">
                     <Link 
                       to="/AboutUs"
@@ -131,6 +121,10 @@ const Footer = () => {
                         About us
                     </Link>
                   </li>
+                </nav>
+              </div>
+              <div className="w-full px-4 lg:w-1/4 md:w-1/2">
+                <nav className="mb-10 list-none">
                   <li className="mt-3">
                     <Link
                       to="/privacypolicy"
