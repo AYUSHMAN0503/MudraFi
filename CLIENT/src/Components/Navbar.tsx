@@ -27,7 +27,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/SwapInterface" className="flex items-center text-xl">
+        <a href="/SwapInterface" className="flex items-center text-xl text-black">
           Swap
         </a>
       </Typography>
@@ -37,7 +37,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-xl">
+        <a href="#" className="flex items-center text-xl text-black">
           Tokens
         </a>
       </Typography>
@@ -47,7 +47,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-xl">
+        <a href="#" className="flex items-center text-xl text-black">
           Pools
         </a>
       </Typography>
@@ -58,7 +58,7 @@ export function NavbarDefault() {
           <div className="relative flex w-full gap-2 md:w-max">
             <Input
               type="search"
-              color="white"
+              color="black"
               label="Type here..."
               className="pr-20"
               containerProps={{
@@ -67,8 +67,8 @@ export function NavbarDefault() {
             />
             <Button
               size="sm"
-              color="black"
-              className="!absolute right-1 top-1 rounded"
+              color="red"
+              className="!absolute right-1 top-1 rounded "
             >
               Search
             </Button>
@@ -79,11 +79,11 @@ export function NavbarDefault() {
             color="blue-gray"
             className="p-1 font-normal"
           >
-            <a href="#" className="flex items-center text-xl">
-              AI Advisor
+            <a href="#" className="flex items-center text-xl text-black">
+              AI Analytics
             </a>
           </Typography>
-          <Button className="bg-black h-12 rounded-lg">Connect</Button>
+          <Button className="bg-red-500 h-12 rounded-lg">Connect</Button>
         </ul>
       );
  
