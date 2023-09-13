@@ -6,7 +6,7 @@ import PrivacyPolicy from "./Components/Privacy Policy";
 import AboutUs from "./Components/AboutUs";
 import ReviewPage from "./Components/ReviewPage";
 import SwapInterface from "./Components/SwapInterface";
-
+import { Pool } from "./Components/PoolPage";
 import Home from "./Components/Home";
 
 const App = () => {
@@ -24,6 +24,7 @@ const App = () => {
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ReviewPage" element={<ReviewPage />} />
           <Route path="/SwapInterface" element={<SwapInterface />} />
+          <Route path="/Pool" element={<Pool/>} />
 
 
         </Routes>

@@ -2,12 +2,13 @@ import React from 'react'
 import Hero from './Hero'
 import CTA from './CTA'
 import Cards from './Cards'
-import BG from ".././assets/dark-geometric-background-with-copy-space.jpg"
+import Business from './AiFeature'
+
 const Home = () => {
   return (
-    <div style={{backgroundImage:`url(${BG})`, backgroundSize:"cover",
-    backgroundPosition:"top"}}>
+    <div>
 <Hero/>
+<Business/>
 <Cards/>
 <CTA/>
 </div>
