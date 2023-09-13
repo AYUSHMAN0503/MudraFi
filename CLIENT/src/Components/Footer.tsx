@@ -109,7 +109,7 @@ const Footer = () => {
                     <a className="text-white cursor-pointer">Tokens</a>
                   </li>
                   <li className="mt-3">
-                    <a className="text-white cursor-pointer">Pools</a>
+                    <Link to="/Pool" className="text-white cursor-pointer">Pools</Link>
                   </li>
                 </nav>
               </div>
