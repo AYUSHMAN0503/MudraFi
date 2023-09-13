@@ -5,7 +5,7 @@
 
 Theme no 2: DeFi (Decentralized Finance)
 
-Idea: NFT Based AI Music Marketplace
+Idea: 
 
 We will create a decentralized platform that allows users to save and invest their assets in a transparent and accessible manner using Blockchain tech.
 
@@ -17,6 +17,7 @@ We will create a decentralized platform that allows users to save and invest the
 
 - Market Sentiment Analysis using ML.
 - Risk Assessment.
+- Swapping, Pools and AI analytics
 
 
 ## Run Locally
@@ -90,11 +91,6 @@ git push origin master
 - Step 3: Create a pull request on the original repository
 
 Now, go to the original repository on GitHub and create a pull request from your forked repository. 
-
-
-
-
-
 
 
 
