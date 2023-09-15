@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const { ethers } = require('ethers');
+
 
 const Swap: React.FC = () => {
   const [inputToken, setInputToken] = useState("");
@@ -7,71 +7,12 @@ const Swap: React.FC = () => {
   const [inputAmount, setInputAmount] = useState("");
   const [outputAmount, setOutputAmount] = useState("");
 
-  // const handleSwap = () => {
-  //   // Swap logic here
-  //   setOutputAmount(inputAmount);
-  //   setInputAmount("");
-  // };
-
-  const handleSwap = async () => {
-    try {
-      // Ensure input and output amounts are valid and greater than zero
-      const inputAmountFloat = parseFloat(inputAmount);
-      const outputAmountFloat = parseFloat(outputAmount);
-  
-      if (isNaN(inputAmountFloat) || isNaN(outputAmountFloat) || inputAmountFloat <= 0 || outputAmountFloat <= 0) {
-        throw new Error('Invalid input or output amount');
-      }
-  
-      // Initialize ethers provider (e.g., Infura)
-      const provider = new ethers.JsonRpcProvider('https://mainnet.infura.io/v3/65f6c8d9348d401885c820627abf8607');
-  
-      // Set your contract address and ABI
-      const contractAddress = '0x...'; // Replace with your contract's address
-      const contractABI = [...]; // Replace with your contract's ABI
-  
-      // Create a contract instance
-      const contract = new ethers.Contract(contractAddress, contractABI, provider);
-  
-      // Determine the input and output tokens (addresses)
-      const inputTokenAddress = ethers.utils.getAddress(inputToken);
-      const outputTokenAddress = ethers.utils.getAddress(outputToken);
-  
-      // Convert inputAmount to Wei or other units based on the token
-      const inputAmountInWei = ethers.utils.parseUnits(inputAmount, 'wei');
-      const outputAmountInWei = ethers.utils.parseUnits(outputAmount, 'wei');
-  
-      // Get the user's wallet or connect to a wallet provider like MetaMask
-      const wallet = new ethers.Wallet('YOUR_PRIVATE_KEY', provider); // Replace with your private key
-  
-      // Call your contract's swapTokens function
-      const tx = await contract.connect(wallet).swapTokens(
-        inputTokenAddress,
-        outputTokenAddress,
-        inputAmountInWei,
-        outputAmountInWei
-      );
-  
-      // Wait for the transaction to be mined and get the receipt
-      const receipt = await tx.wait();
-  
-      // Check if the transaction was successful
-      if (receipt.status !== 1) {
-        throw new Error('Transaction failed');
-      }
-  
-      // Handle the transaction receipt (e.g., display success message, update balances)
-      console.log('Transaction successful:', receipt);
-  
-      // Clear input fields or update UI as needed
-      setInputAmount('');
-      setOutputAmount('');
-    } catch (error) {
-      console.error('Swap failed:', error);
-      // Optionally, display an error message to the user
-    }
+  const handleSwap = () => {
+    // Swap logic here
+    setOutputAmount(inputAmount);
+    setInputAmount("");
   };
-  
+
 
   const containerStyle = {
     boxShadow: "0 0 10px ",
