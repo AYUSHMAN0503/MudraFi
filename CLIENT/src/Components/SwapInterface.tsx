@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 const Swap: React.FC = () => {
   const [inputToken, setInputToken] = useState("");
   const [outputToken, setOutputToken] = useState("");
@@ -12,7 +11,6 @@ const Swap: React.FC = () => {
     setOutputAmount(inputAmount);
     setInputAmount("");
   };
-
 
   const containerStyle = {
     boxShadow: "0 0 10px ",
@@ -50,8 +48,6 @@ const Swap: React.FC = () => {
                 {/* Replace with your list of tokens */}
                 <option>ETH</option>
                 <option>DAI</option>
-                <option>USDC</option>
-                {/* <option>WBTC</option>A */}
               </select>
             </div>
           </div>
@@ -77,8 +73,6 @@ const Swap: React.FC = () => {
                 {/* Replace with your list of tokens */}
                 <option>ETH</option>
                 <option>DAI</option>
-                <option>USDC</option>
-                {/* <option>WBTC</option> */}
               </select>
             </div>
           </div>
