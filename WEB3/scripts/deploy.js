@@ -1,11 +1,11 @@
 // const hre = require("hardhat");
 
 async function main(){
-  // // ERC20 - Boo token
-  // const BooToken = await hre.ethers.getContractFactory("BooToken");
-  // const booToken = await BooToken.deploy();
-  // await booToken.deployed();
-  // console.log(`BOO deployed to ${booToken.address}`);
+  // ERC20 - Boo token
+  const BooToken = await hre.ethers.getContractFactory("BooToken");
+  const booToken = await BooToken.deploy();
+  await booToken.deployed();
+  console.log(`BOO deployed to ${booToken.address}`);
 
   // // bootoken
   //   const [BooToken] = await ethers.getSigners();
@@ -25,15 +25,15 @@ async function main(){
   
   //   console.log("Life Token address:", await lifeToken.getAddress());
 
-  // SingleSwapToken
+  // // SingleSwapToken
 
-    const [SingleSwapToken] = await ethers.getSigners();
+  //   const [SingleSwapToken] = await ethers.getSigners();
   
-    console.log("Deploying contracts with the account:", SingleSwapToken.address);
+  //   console.log("Deploying contracts with the account:", SingleSwapToken.address);
   
-    const singleSwapToken = await ethers.deployContract("SingleSwapToken");
+  //   const singleSwapToken = await ethers.deployContract("SingleSwapToken");
   
-    console.log("SingleSwap address:", await singleSwapToken.getAddress());
+  //   console.log("SingleSwap address:", await singleSwapToken.getAddress());
 
   // // SwapMultiHop
   //   const [SwapMultiHop] = await ethers.getSigners();
@@ -45,23 +45,23 @@ async function main(){
   //   console.log("MultiHopSwap address:", await swapMultiHop.getAddress());
   
 
-  // // ERC20 - Life token
-  // const LifeToken = await hre.ethers.getContractFactory("BooToken");
-  // const lifeToken = await LifeToken.deploy();
-  // await lifeToken.deployed();
-  // console.log(`Life deployed to ${lifeToken.address}`);
+  // ERC20 - Life token
+  const LifeToken = await hre.ethers.getContractFactory("BooToken");
+  const lifeToken = await LifeToken.deploy();
+  await lifeToken.deployed();
+  console.log(`Life deployed to ${lifeToken.address}`);
 
-  // // SingleSwapToken
-  // const SingleSwapToken = await hre.ethers.getContractFactory("BooToken");
-  // const singleSwapToken = await SingleSwapToken.deploy();
-  // await singleSwapToken.deployed();
-  // console.log(`Life deployed to ${singleSwapToken.address}`);
+  // SingleSwapToken
+  const SingleSwapToken = await hre.ethers.getContractFactory("BooToken");
+  const singleSwapToken = await SingleSwapToken.deploy();
+  await singleSwapToken.deployed();
+  console.log(`Life deployed to ${singleSwapToken.address}`);
 
-  // // SwapMultiHop
-  // const SwapMultiHop = await hre.ethers.getContractFactory("BooToken");
-  // const swapMultiHop = await SwapMultiHop.deploy();
-  // await swapMultiHop.deployed();
-  // console.log(`Life deployed to ${swapMultiHop.address}`);
+  // SwapMultiHop
+  const SwapMultiHop = await hre.ethers.getContractFactory("BooToken");
+  const swapMultiHop = await SwapMultiHop.deploy();
+  await swapMultiHop.deployed();
+  console.log(`Life deployed to ${swapMultiHop.address}`);
 };
 
 main()
