@@ -47,7 +47,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-xl text-white">
+        <a href="/Pool" className="flex items-center text-xl text-white">
           Pools
         </a>
       </Typography>
