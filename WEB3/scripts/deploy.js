@@ -7,23 +7,23 @@ async function main(){
   // await booToken.deployed();
   // console.log(`BOO deployed to ${booToken.address}`);
 
-  // bootoken
-    const [BooToken] = await ethers.getSigners();
+  // // bootoken
+  //   const [BooToken] = await ethers.getSigners();
   
-    console.log("Deploying contracts with the account:", BooToken.address);
+  //   console.log("Deploying contracts with the account:", BooToken.address);
   
-    const booToken = await ethers.deployContract("BooToken");
+  //   const booToken = await ethers.deployContract("BooToken");
   
-    console.log("Boo Token address:", await booToken.getAddress());
+  //   console.log("Boo Token address:", await booToken.getAddress());
   
-  // Lifetoken
-    const [LifeToken] = await ethers.getSigners();
+  // // Lifetoken
+  //   const [LifeToken] = await ethers.getSigners();
   
-    console.log("Deploying contracts with the account:", LifeToken.address);
+  //   console.log("Deploying contracts with the account:", LifeToken.address);
   
-    const lifeToken = await ethers.deployContract("LifeToken");
+  //   const lifeToken = await ethers.deployContract("LifeToken");
   
-    console.log("Life Token address:", await lifeToken.getAddress());
+  //   console.log("Life Token address:", await lifeToken.getAddress());
 
   // SingleSwapToken
 
@@ -35,14 +35,14 @@ async function main(){
   
     console.log("SingleSwap address:", await singleSwapToken.getAddress());
 
-  // SwapMultiHop
-    const [SwapMultiHop] = await ethers.getSigners();
+  // // SwapMultiHop
+  //   const [SwapMultiHop] = await ethers.getSigners();
   
-    console.log("Deploying contracts with the account:", SwapMultiHop.address);
+  //   console.log("Deploying contracts with the account:", SwapMultiHop.address);
   
-    const swapMultiHop = await ethers.deployContract("SwapMultiHop");
+  //   const swapMultiHop = await ethers.deployContract("SwapMultiHop");
   
-    console.log("MultiHopSwap address:", await swapMultiHop.getAddress());
+  //   console.log("MultiHopSwap address:", await swapMultiHop.getAddress());
   
 
   // // ERC20 - Life token

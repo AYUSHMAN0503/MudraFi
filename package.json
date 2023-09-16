@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@apollo/client": "^3.8.3",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "graphql": "^16.8.0",
     "web3": "^4.1.1"
   }
