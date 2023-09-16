@@ -6,22 +6,19 @@ const Footer = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
-  const backgroundImageUrl =
-    "https://images.unsplash.com/photo-1615992174118-9b8e9be025e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80";
+ 
 
   return (
     <div>
       <div
         className="flex items-end w-full  "
         style={{
-          backgroundColor: "black",
-          backgroundImage: `url('${backgroundImageUrl}')`,
-          backgroundSize: "cover",
+         backgroundSize: "cover",
           backgroundPosition: "bottom",
           width: "100%",
         }}
       >
-        <footer className="w-full text-gray-700 body-font bg-black slg:bg-transparent p-0 slg:p-5">
+        <footer className="w-full text-gray-700 body-font  p-0 slg:p-5 lg:p-5">
           <div className="container flex flex-col flex-wrap px-5 pt-20 pb-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
             <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
               <a className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
@@ -164,7 +161,7 @@ const Footer = () => {
           </div>
           <hr />
           <div className="container px-5 py-4 mx-auto">
-            <p className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-400 capitalize xl:text-center">
+            <p className="text-sm text-transparent bg-clip-text bg-gradient-to-r bg-text xl:text-center">
               © 2023 MudraFi. All rights reserved | Created by WEB3 SAILORS for
               HackaTRON.
             </p>

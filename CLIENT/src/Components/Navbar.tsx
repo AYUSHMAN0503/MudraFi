@@ -27,7 +27,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/SwapInterface" className="flex items-center text-xl text-black">
+        <a href="/SwapInterface" className="flex items-center text-xl text-white">
           Swap
         </a>
       </Typography>
@@ -37,7 +37,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-xl text-black">
+        <a href="#" className="flex items-center text-xl text-white">
           Tokens
         </a>
       </Typography>
@@ -47,7 +47,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-xl text-black">
+        <a href="#" className="flex items-center text-xl text-white">
           Pools
         </a>
       </Typography>
@@ -55,20 +55,21 @@ export function NavbarDefault() {
   );
       const navList2 = (
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-          <div className="relative flex w-full gap-2 md:w-max">
+          <div className="relative flex w-full gap-2 md:w-max text-white">
             <Input
+             
               type="search"
-              color="black"
               label="Type here..."
               className="pr-20"
               containerProps={{
                 className: "min-w-[288px]",
+              
               }}
             />
             <Button
               size="sm"
               color="red"
-              className="!absolute right-1 top-1 rounded "
+              className="!absolute right-1 top-1 rounded bg-button "
             >
               Search
             </Button>
@@ -79,16 +80,16 @@ export function NavbarDefault() {
             color="blue-gray"
             className="p-1 font-normal"
           >
-            <a href="#" className="flex items-center text-xl text-black">
+            <a href="#" className="flex items-center text-xl text-white">
               AI Analytics
             </a>
           </Typography>
-          <Button className="bg-red-500 h-12 rounded-lg">Connect</Button>
+          <Button className="bg-button h-12 rounded-lg  font-semibold">Connect</Button>
         </ul>
       );
  
   return (
-    <Navbar className="max-w-full bg-white/30 backdrop-blur-md text-white/90 fixed rounded-2xl mt-1.5 py-2 px-6 lg:px-20 lg:py-4 z-10">
+    <Navbar className="max-w-full bg-black/30 backdrop-blur-md  text-white/90 fixed rounded-2xl mt-1.5 py-2 px-6 lg:px-20 lg:py-4 z-10">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
       <div className="hidden lg:block">{navList1}</div>
       <Link to="/"><img src={Logo} alt="" width={200} /></Link>

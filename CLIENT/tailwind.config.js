@@ -76,6 +76,14 @@ export default withMT({
           '800': '#201d38',
           '900': '#0a0e17',
         },
+          Blue:{
+          "50" : "#77D4FC",
+          "100" :"#00A6EE",
+        },
+
+        Green:{
+         "50" : "#00C4A2"
+          }
       },
       backgroundImage: (theme) => ({
         "gradient-yellowred": "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
