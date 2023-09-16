@@ -13,7 +13,6 @@ import {
   IWETHAddress,
   IWETHABI,
 } from "./Context/constants";
-import { accountSchema } from "web3/lib/commonjs/eth.exports";
 
 // Check if wallet is connected
 export const checkIfWalletConnected = async () => {
