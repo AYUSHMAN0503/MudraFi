@@ -38,7 +38,7 @@ const ServiceCard = ({ picture, title ,desc}: { picture:any, title: any, desc:an
   return (
     <>
       <div className="w-full px-4 md:w-1/2 lg:w-1/3 h-max ">
-        <motion.div className="mb-8 rounded-[20px] bg-transparent backdrop-blur-md p-10 pt-0 shadow-lg shadow-orange-500  md:px-7 xl:px-10 "
+        <motion.div className="mb-8 rounded-[20px] bg-transparent backdrop-blur-md p-10 pt-0 shadow-md shadow-Blue-100  md:px-7 xl:px-10 "
          whileHover={{ scale: 1.05 }}
          transition={{ type: "spring", stiffness: 400, damping: 10 }}>
           <div

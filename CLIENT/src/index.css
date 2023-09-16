@@ -49,5 +49,18 @@ html,body{
     #33bbcf 90.29%
   );
   }
+
+  .bg-button{
+    background-color: #7fcec5;
+    background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+
+  }
+  
+  .bg-text{
+    background-color: #09c7fb;
+    background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
+    
+
+  }
   
 

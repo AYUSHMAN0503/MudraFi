@@ -8,7 +8,7 @@ import ReviewPage from "./Components/ReviewPage";
 import SwapInterface from "./Components/SwapInterface";
 import { Pool } from "./Components/PoolPage";
 import Home from "./Components/Home";
-
+import Bottom from "./Components/Bottom";
 const App = () => {
   return (
     <div>
@@ -29,7 +29,7 @@ const App = () => {
 
         </Routes>
 
-        <Footer />
+  <Bottom/>
       </Router>
     </div>
   );
