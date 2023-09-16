@@ -58,7 +58,7 @@ export default withMT({
           '200': '#fbd589',
           '300': '#f9c45c',
           '400': '#f8b42f',
-          '500': '#e89f04', // You can change this hex code to your desired shade
+          '500': '#e89f04', 
           '600': '#b67f03',
           '700': '#855d02',
           '800': '#533c01',
@@ -70,7 +70,7 @@ export default withMT({
           '200': '#b9a9d4',
           '300': '#9b85c1',
           '400': '#7e61af',
-          '500': '#624d9d', // You can change this hex code to your desired shade
+          '500': '#624d9d', 
           '600': '#4b3d7b',
           '700': '#362d5a',
           '800': '#201d38',

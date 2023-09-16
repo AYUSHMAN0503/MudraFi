@@ -35,7 +35,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, content, index }
 const Business: React.FC = () => (
   <section id="features" className={`${layout.section} p-16`}>
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
+      <h2 className={`${styles.heading2} bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600`}>
         Lorem ipsum dolor sit amet.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>

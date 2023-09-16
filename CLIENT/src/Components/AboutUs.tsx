@@ -112,7 +112,7 @@ const teamMembers = [
 const AboutUs: React.FC = () => {
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-center text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600">
+      <h1 className="text-center text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
         Our Team -- Web3 Sailors
       </h1>
       <p className="text-center text-xl text-gold-600 mt-2">

@@ -18,22 +18,24 @@ const Swap: React.FC = () => {
     maxWidth: "600px",
     margin: "0 auto",
     background: "#1F1F1F",
+    border: "3px solid cyan",
+    borderRadius: "10px"
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-app-bg">
+    <div className="flex items-center justify-center min-h-screen bg-app-bg">
       <div
         style={containerStyle}
-        className="container mx-auto p-5 bg-white rounded shadow-lg h-96 border-orange-400 border-3 shadow-xl hover:border-orange-500 hover:shadow-2xl transition duration-500 ease-in-out rounded-lg h-1/2 "
+        className="container mx-auto p-5 bg-white rounded shadow-lg border-orange-400 border-3 shadow-xl hover:border-orange-500 hover:shadow-2xl transition duration-500 ease-in-out rounded-lg "
       >
-        <h1 className="text-3xl font-bold mb-5 text-orange-400">Swap</h1>
+        <h1 className="text-3xl font-bold mb-5 text-cyan-400">Swap</h1>
         <div className="mb-5 ">
-          <label className="block text-gray-700">From (estimated)</label>
+          <label className="block text-cyan-700">From (estimated)</label>
           <div className="mt-1 relative rounded-md shadow-sm ">
             <input
               type="text"
               placeholder="0.0"
-              className="form-input block w-full pl-7 pr-12 sm:text-sm sm:leading-5 text-xl h-20 rounded-lg bg-gradient-to-r from-gray-600 to-gray-400"
+              className="form-input block w-full pl-7 pr-12 sm:text-sm md:text-lg lg:text-xl h-20 rounded-lg bg-gradient-to-r from-gray-200 to-gray-600"
               value={inputAmount}
               onChange={(e) => setInputAmount(e.target.value)}
             />
@@ -41,7 +43,7 @@ const Swap: React.FC = () => {
               <label className="sr-only">Currency</label>
               <select
                 aria-label="Currency"
-                className="form-select h-full py-0 pl-2 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm sm:leading-5 text-lg"
+                className="form-select h-full py-0 pl-2 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm md:text-lg lg:text-xl"
                 value={inputToken}
                 onChange={(e) => setInputToken(e.target.value)}
               >
@@ -53,12 +55,12 @@ const Swap: React.FC = () => {
           </div>
         </div>
         <div className="mb-5">
-          <label className="block text-gray-700">To (estimated)</label>
+          <label className="block text-cyan-700">To (estimated)</label>
           <div className="mt-1 relative rounded-md shadow-sm">
             <input
               type="text"
               placeholder="0.0"
-              className="form-input block w-full pl-7 pr-12 sm:text-sm sm:leading-5 text-xl h-20 rounded-lg  bg-gradient-to-r from-gray-600 to-gray-400"
+              className="form-input block w-full pl-7 pr-12 sm:text-sm md:text-lg lg:text-xl h-20 rounded-lg  bg-gradient-to-r from-gray-200 to-gray-600"
               value={outputAmount}
               readOnly
             />
@@ -66,7 +68,7 @@ const Swap: React.FC = () => {
               <label className="sr-only">Currency</label>
               <select
                 aria-label="Currency"
-                className="form-select h-full py-0 pl-2 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm sm:leading-5 text-lg "
+                className="form-select h-full py-0 pl-2 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm md:text-lg lg:text-xl "
                 value={outputToken}
                 onChange={(e) => setOutputToken(e.target.value)}
               >
@@ -79,7 +81,7 @@ const Swap: React.FC = () => {
         </div>
         <button
           onClick={handleSwap}
-          className="w-full py-4 px-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out mt-4"
+          className="w-full py-4 px-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-cyan-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out mt-auto"
         >
           Swap
         </button>
