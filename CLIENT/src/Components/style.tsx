@@ -1,4 +1,6 @@
-
+import { MdSecurity } from 'react-icons/md';
+import { FcMoneyTransfer } from 'react-icons/fc';
+import { GrUserExpert} from 'react-icons/gr';
 const styles = {
     boxWidth: "xl:max-w-[1280px] w-full",
   
@@ -33,24 +35,24 @@ const styles = {
   export const features = [
     {
       id: "feature-1",
-      icon:"",
-      title: "Lorem",
+      icon:<MdSecurity/>,
+      title: "Enhancing Security",
       content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, quibusdam.",
+        "To detect the fraudulent transactions & behaviours and preventing hacks by analyzing user-behaviour patterns.",
     },
     {
       id: "feature-2",
-      icon:"",
-      title: "Lorem",
+      icon:FcMoneyTransfer,
+      title: "Reducing Transaction Fees",
       content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, quibusdam.",
+      "By predecting optional gas price for a transaction based on current network conditions.",
     },
     {
       id: "feature-3",
-      icon: "",
-      title: "Lorem",
+      icon: GrUserExpert,
+      title: "Personalized Experience",
       content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, quibusdam.",
+      "Personalized advisory & recommendations based on user preferences and past behaviour.",
     },
   ];
 
