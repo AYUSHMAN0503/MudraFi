@@ -17,7 +17,7 @@ interface TeamMember {
   bio: string;
 }
 
-const TeamMemberCard: React.FC<TeamMember> = ({
+const Swap: React.FC<TeamMember> = ({
   name,
   role,
   photo,
@@ -35,41 +35,40 @@ const TeamMemberCard: React.FC<TeamMember> = ({
   return (
     <div
       className={`${
-        expanded ? "lg:w-1/10 " : "lg:w-1/10 "
-      } lg:p-2 w-full p-2 cursor-pointer transition-transform transform hover:scale-105
-      2xl:w-1/6 2xl:p-6`}
+        expanded ? "w-full " : "w-full "
+      } p-2 cursor-pointer transition-transform transform hover:scale-105`}
       onClick={handleCardClick}
     >
-      <div className="bg-white shadow-lg rounded-lg p-6 ">
+      <div className="bg-white shadow-lg rounded-lg p-6 h-full">
         <div className="flex justify-center">
           <img
             src={photo}
             alt={name}
-            className="h-32 w-32 mx-auto rounded-full"
+            className="h-40 w-40 mx-auto rounded-full"
           />
         </div>
         <div className="text-center mt-4">
-          <h2 className="text-xl text-black font-semibold">{name}</h2>
-          <p className="text-orange-500">{role}</p>
+          <h2 className="text-xl text-gray-900 font-semibold">{name}</h2>
+          <p className="text-green-600 text-base">{role}</p>
         </div>
         {!expanded && (
           <div className="mt-4 text-center">
             <a href={instagram} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={faInstagram}
-                className="text-gray-600 hover:text-gray-500 mr-2"
+                className="text-gray-600 hover:text-green-500 mr-2"
               />
             </a>
             <a href={twitter} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={faTwitter}
-                className="text-gray-600 hover:text-gray-500 mr-2"
+                className="text-gray-600 hover:text-green-500 mr-2"
               />
             </a>
             <a href={github} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={faGithub}
-                className="text-gray-600 hover:text-gray-500"
+                className="text-gray-600 hover:text-green-500"
               />
             </a>
           </div>
@@ -84,4 +83,4 @@ const TeamMemberCard: React.FC<TeamMember> = ({
   );
 };
 
-export default TeamMemberCard;
+export default Swap;

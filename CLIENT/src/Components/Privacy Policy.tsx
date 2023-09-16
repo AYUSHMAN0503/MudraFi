@@ -1,18 +1,15 @@
-import { LinearGradient } from 'react-text-gradients';
 import Animatedpage from './AnimatedPage';
 const PrivacyPolicy = () => {
  
   return (
     <Animatedpage>
     <div className="bg-app-bg text-white p-6">
-      <h1 className="text-6xl font-bold mb-7 text-center pt-2">
-        <LinearGradient gradient={['to left', '#17acff ,#ff68f0']} className="gradient-title">
+      <h1 className="text-6xl font-bold mb-7 text-center pt-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
           MudraFi Privacy Policy
-        </LinearGradient>
       </h1>
 
       <p className="mb-4 text-xl">
-        Last Updated: 8th September, 2023
+        Last Updated: 16th September, 2023
       </p>
 
       <p>

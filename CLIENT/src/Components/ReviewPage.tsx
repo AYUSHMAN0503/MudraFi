@@ -40,7 +40,7 @@ const ReviewPage: React.FC = () => {
 
   return (
     <div className="container mx-auto p-5">
-      <h1 className="lg:text-6xl md:text-5xl sm:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-400 text-center font-bold mb-4 p-2">
+      <h1 className="lg:text-6xl md:text-5xl sm:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 text-center font-bold mb-4 p-2">
         Write your Review
       </h1>
       <div className="container mx-auto text-white p-2">

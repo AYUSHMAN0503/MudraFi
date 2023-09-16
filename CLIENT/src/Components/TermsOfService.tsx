@@ -25,7 +25,7 @@ const TermsOfService: React.FC = () => {
   return (
     <AnimatedPage>
       <div className="bg-app-bg text-white p-6">
-        <h1 className="text-6xl font-bold mb-7 text-center pt-2 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-400">
+        <h1 className="text-6xl font-bold mb-7 text-center pt-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
             MudraFi Terms of Service
         </h1>
 

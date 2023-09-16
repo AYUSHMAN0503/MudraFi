@@ -30,7 +30,7 @@ const Swap: React.FC = () => {
       >
         <h1 className="text-3xl font-bold mb-5 text-cyan-400">Swap</h1>
         <div className="mb-5 ">
-          <label className="block text-cyan-700">From (estimated)</label>
+          <label className="block text-green-300">From (estimated)</label>
           <div className="mt-1 relative rounded-md shadow-sm ">
             <input
               type="text"
@@ -55,7 +55,7 @@ const Swap: React.FC = () => {
           </div>
         </div>
         <div className="mb-5">
-          <label className="block text-cyan-700">To (estimated)</label>
+          <label className="block text-green-300">To (estimated)</label>
           <div className="mt-1 relative rounded-md shadow-sm">
             <input
               type="text"
