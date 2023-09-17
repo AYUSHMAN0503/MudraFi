@@ -11,22 +11,26 @@ const Hero: React.FC = () => {
           className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
         >
           <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-300 to-sky-300 dark:to-indigo-600"></div>
         </div>
         <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
           <div className="relative pt-16 ml-auto">
             <div className="lg:w-2/3 text-center mx-auto">
-              <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-400 font-bold text-4xl md:text-6xl xl:text-7xl pb-3">
+              <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-green-400 font-bold text-4xl md:text-6xl xl:text-7xl pb-3">
                 A Protocol for
                 <Typewriter
                   options={{
-                    strings: ["Investing", "Trading", "Asset Management"],
+                    strings: [
+                      '<span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-400">Investing</span>', 
+                      '<span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">Trading</span>', 
+                      '<span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-white">Asset Management</span>'
+                    ],                
                     autoStart: true,
                     loop: true,
                   }}
                 />
               </h1>
-              <p className="mt-5 bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-400">
+              <p className="mt-5 bg-clip-text text-transparent bg-gradient-to-r from-white to-white">
                 Choo lo jo mujhe tum kabhi, kho na jaoon main raat din.
                 Nazaron main tum ho basey, Keh do jo tum ek baar, mere ho bas tum mere, Nazaron main tum ho basey!
                 Haan main ruka hoon, tu ja chukka hai..Haan main ruka hoon, tu

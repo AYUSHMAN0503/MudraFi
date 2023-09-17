@@ -15,7 +15,7 @@ const LiquidityPool: React.FC = () => {
     { token: "Bitcoin (BTC)", amount: "_", icon:faBitcoin  , currency:"USDC"},
     { token: "US Dollar (USD)", amount: "_", icon: faDollarSign, currency:"USDC" },
     { token: "Bitcoin (BTC)", amount: "_", icon:faBitcoin , currency:"USDC"},
-    { token: "US Dollar (USD)", amount: "_", icon: faDollarSign, currency:"USDC" },
+    { token: "BitTorrent(BTT)", amount: "_", icon: faDollarSign, currency:"USDC" },
     // Add more tokens with different icons as needed
   ];
 

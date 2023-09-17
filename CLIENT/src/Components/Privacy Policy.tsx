@@ -1,20 +1,24 @@
+import React from 'react';
 import Animatedpage from './AnimatedPage';
+
 const PrivacyPolicy = () => {
- 
+  const today = new Date();
+  const date = `${today.getDate()}-${today.getMonth()+1}-${today.getFullYear()}`;
+
   return (
     <Animatedpage>
-    <div className="bg-app-bg text-white p-6">
-      <h1 className="text-6xl font-bold mb-7 text-center pt-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
+      <div className="bg-app-bg text-white p-6">
+        <h1 className="text-6xl font-bold mb-7 text-center pt-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
           MudraFi Privacy Policy
-      </h1>
+        </h1>
 
-      <p className="mb-4 text-xl">
-        Last Updated: 16th September, 2023
-      </p>
+        <p className="mb-4 text-xl">
+          Last Updated: {date}
+        </p>
 
-      <p>
-        This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
-      </p>
+        <p>
+          This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
+        </p>
 
       <h2 className="text-lg font-semibold mt-4 section-title">Interpretation and Definitions</h2>
       <h3 className="text-md font-semibold mt-2">Interpretation</h3>

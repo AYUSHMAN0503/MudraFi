@@ -22,7 +22,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, content, index }
       <FontAwesomeIcon icon={icon}  className="w-[50%] h-[50%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
-      <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
+      <h4 className="font-poppins font-semibold bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-blue-500 text-[18px] leading-[23.4px] mb-1">
         {title}
       </h4>
       <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
@@ -35,9 +35,13 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, content, index }
 const Business: React.FC = () => (
   <section id="features" className={`${layout.section}`}>
     <div id="" className={`${layout.sectionInfo}`}>
-      <h2 id=""className={`${styles.heading2} flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600`}>
-      AI Features
+      <h3 id="" className={`${styles.heading3} flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600`}> 
+        Dig deeper into WEB3 world by using
+      </h3>
+      <h2 id="" className={`${styles.heading2} flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600`}>
+        AI Analytics
       </h2>
+
      
     </div>
     <div id="" className={`${layout.sectionImg} flex-col`}>

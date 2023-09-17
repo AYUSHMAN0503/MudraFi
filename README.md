@@ -10,9 +10,6 @@ Idea:
 We will create a decentralized platform that allows users to save and invest their assets in a transparent and accessible manner using Blockchain tech.
 
 
-
-
-
 ## Features
 
 - Market Sentiment Analysis using ML.
