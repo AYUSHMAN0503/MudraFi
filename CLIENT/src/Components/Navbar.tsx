@@ -28,9 +28,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/SwapInterface" className="flex items-center text-xl text-white">
+        <Link to="/SwapInterface" className="flex items-center text-xl text-white">
           Swap
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -48,9 +48,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/Pool" className="flex items-center text-xl text-white">
+        <Link to="/Pool" className="flex items-center text-xl text-white">
           Pools
-        </a>
+        </Link>
       </Typography>
     </ul>
   );
