@@ -1,6 +1,6 @@
 # MudraFi
 
-![Logo](logo/logo-no-background.png)
+![Logo](CLIENT/logo/logo-no-background.png)
 
 
 Theme no 2: DeFi (Decentralized Finance)
