@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Navbar,
   MobileNav,
@@ -68,7 +69,7 @@ export function NavbarDefault() {
             />
             <Button
               size="sm"
-              color="red"
+              color="blue"
               className="!absolute right-1 top-1 rounded bg-button "
             >
               Search
@@ -84,12 +85,12 @@ export function NavbarDefault() {
               AI Analytics
             </a>
           </Typography>
-          <Button className="bg-button h-12 rounded-lg  font-semibold">Connect</Button>
+          <Button className="bg-button h-12 rounded-lg  font-normal text-sm">Connect</Button>
         </ul>
       );
  
   return (
-    <Navbar className="max-w-full bg-black/30 backdrop-blur-md  text-white/90 fixed rounded-2xl mt-1.5 py-2 px-6 lg:px-20 lg:py-4 z-10">
+    <Navbar className="max-w-full bg-black/30 backdrop-blur-md  text-white/90 fixed rounded-2xl mt-1.5 py-2 px-6 lg:px-20 lg:py-4 z-10 border-none">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
       <div className="hidden lg:block">{navList1}</div>
       <Link to="/"><img src={Logo} alt="" width={200} /></Link>

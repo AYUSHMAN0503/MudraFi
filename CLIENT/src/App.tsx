@@ -6,17 +6,17 @@ import PrivacyPolicy from "./Components/Privacy Policy";
 import AboutUs from "./Components/AboutUs";
 import ReviewPage from "./Components/ReviewPage";
 import SwapInterface from "./Components/SwapInterface";
-import { Pool } from "./Components/PoolPage";
 import Home from "./Components/Home";
 import Bottom from "./Components/Bottom";
+import LiquidityPool from "./Components/Pool2";
+import { Pool } from "./Components/PoolPage";
 const App = () => {
   return (
-    <div>
+    <div >
       <Router>
         <div className="pb-20">
           <NavbarDefault />
         </div>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/termsofservice" element={<TermsOfService />} />
@@ -24,7 +24,8 @@ const App = () => {
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ReviewPage" element={<ReviewPage />} />
           <Route path="/SwapInterface" element={<SwapInterface />} />
-          <Route path="/Pool" element={<Pool/>} />
+          <Route path="/Pool" element={<LiquidityPool/>} />
+          <Route path="/Pools" element={<Pool/>} />
 
 
         </Routes>

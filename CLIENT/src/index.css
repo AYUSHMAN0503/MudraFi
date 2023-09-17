@@ -31,11 +31,8 @@
 }
 
 html,body{
-  --tw-bg-opacity:1;
    background-color: #2d3436;
    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
-
-  ;
 }
 
  .bg-blue-gradient {
@@ -64,3 +61,6 @@ html,body{
   }
   
 
+  .bg-gray{
+background-color: #232323;
+  }
