@@ -120,7 +120,7 @@ const Footer = () => {
               © 2023 MudraFi. All rights reserved | Created by WEB3 SAILORS for
               HackaTRON.
             </p>
-            <p className="text-sm text-white mt-3">
+            <p className="text-sm text-dimWhite mt-3">
               IMPORTANT DISCLAIMER: All content provided herein our website,
               hyperlinked sites, associated applications, forums, blogs,
               convivial media accounts and other platforms (“Site”) is for your

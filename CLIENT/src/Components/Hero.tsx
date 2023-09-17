@@ -31,11 +31,11 @@ const Hero: React.FC = () => {
                 />
               </h1>
               <p className="mt-5 bg-clip-text text-transparent bg-gradient-to-r from-white to-white">
-                Choo lo jo mujhe tum kabhi, kho na jaoon main raat din.
-                Nazaron main tum ho basey, Keh do jo tum ek baar, mere ho bas tum mere, Nazaron main tum ho basey!
-                Haan main ruka hoon, tu ja chukka hai..Haan main ruka hoon, tu
-                ja chukka hai, Choo lo mujhe tum kabhi, kho na jaoon main raat
-                din, Nazaron main tum ho basey, ho basey
+              Tumhari Tasveer Ke Sahare Mausam Kayi Guzare, Mausami Na Samjho
+              Par Ishq Ko Humare, Nazron Ke Saamne Main aata Nahi Tumhare
+              Magar Rehte Ho Har Pal, Manzar Mein Tum Humare!!
+              Agar Ishq Se Hai Mila, Fir Dard Se Kya Gila, Iss Dard Mein Zindagi, Khush Haal Hai..
+              Yeh Dooriyan Filhaal Hain!
               </p>
               <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
                 <a

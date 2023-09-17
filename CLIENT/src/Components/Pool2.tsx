@@ -23,7 +23,7 @@ const LiquidityPool: React.FC = () => {
    <>
       <div className=" p-10">
         <div className=" mx-auto">
-          <h1 className="text-2xl underline mr-12 font-semibold text-white mb-4">Top Pools</h1>
+          <h1 className="text-2xl underline mr-12 font-semibold text-cyan-400 mb-4">Top Pools</h1>
 
           {/* Liquidity Pool Information */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
