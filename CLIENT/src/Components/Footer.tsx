@@ -61,7 +61,7 @@ const Footer = () => {
                     <a className="text-white cursor-pointer">Tokens</a>
                   </li>
                   <li className="mt-3">
-                    <Link to="/Pool" className="text-white cursor-pointer">Pools</Link>
+                    <Link to="/Pool" className="text-white cursor-pointer"onClick={scrollToTop}>Pools</Link>
                   </li>
                 </nav>
               </div>

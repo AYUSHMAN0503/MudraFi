@@ -12,7 +12,7 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, content, index }) => (
   <div
-    className={`flex flex-row p-6 rounded-[20px] ${
+    className={`flex flex-row p-6 rounded-[20px]  ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
     } feature-card`}
   >
@@ -33,17 +33,14 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, content, index }
 );
 
 const Business: React.FC = () => (
-  <section id="features" className={`${layout.section} p-16`}>
-    <div className={layout.sectionInfo}>
-      <h2 className={`${styles.heading2} bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600`}>
-        Lorem ipsum dolor sit amet.
+  <section id="features" className={`${layout.section}`}>
+    <div id="" className={`${layout.sectionInfo}`}>
+      <h2 id=""className={`${styles.heading2} flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600`}>
+      AI Features
       </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem obcaecati temporibus laborum eius error enim, natus iste reprehenderit blanditiis ab?
-      </p>
-      <Button styles={`mt-10`} />
+     
     </div>
-    <div className={`${layout.sectionImg} flex-col`}>
+    <div id="" className={`${layout.sectionImg} flex-col`}>
       {features.map((feature, index) => (
         <FeatureCard key={feature.id} {...feature} index={index} />
       ))}
