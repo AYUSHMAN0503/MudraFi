@@ -8,8 +8,8 @@ import ReviewPage from "./Components/ReviewPage";
 import SwapInterface from "./Components/SwapInterface";
 import Home from "./Components/Home";
 import Bottom from "./Components/Bottom";
-import LiquidityPool from "./Components/Pool2";
-import { Pool } from "./Components/PoolPage";
+import LiquidityPool from "./Components/Pool/PoolHome";
+import { Pool } from "./Components/Pool/PoolPage";
 const App = () => {
   return (
     <div >
