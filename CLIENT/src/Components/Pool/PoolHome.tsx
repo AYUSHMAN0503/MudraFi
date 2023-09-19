@@ -5,6 +5,7 @@ import LiquidityPoolCard from "./PoolsCardLayout";
 import { faDollarSign,} from "@fortawesome/free-solid-svg-icons"; // Import icons
 import { faEthereum , faBitcoin } from "@fortawesome/free-brands-svg-icons";
 import { TransactionsTable } from "./List";
+import Animatedpage from "../AnimatedPage";
 const LiquidityPool: React.FC = () => {
   // Mock data for the liquidity pool
   const liquidityPoolData = [
@@ -20,7 +21,7 @@ const LiquidityPool: React.FC = () => {
   ];
 
   return (
-   <>
+   <Animatedpage>
       <div className=" p-10">
         <div className=" mx-auto">
           <h1 className="text-2xl underline mr-12 font-semibold text-cyan-400 mb-4">Top Pools</h1>
@@ -40,7 +41,7 @@ const LiquidityPool: React.FC = () => {
         </div>
       </div>
       <TransactionsTable/>
-  </>
+  </Animatedpage>
   );
 };
 

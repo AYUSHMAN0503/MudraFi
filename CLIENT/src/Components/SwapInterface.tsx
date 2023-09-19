@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Animatedpage from "./AnimatedPage";
 const Swap: React.FC = () => {
   const [inputToken, setInputToken] = useState("");
   const [outputToken, setOutputToken] = useState("");
@@ -23,6 +23,7 @@ const Swap: React.FC = () => {
   };
 
   return (
+    <Animatedpage>
     <div className="flex items-center justify-center min-h-screen bg-app-bg">
       <div
         style={containerStyle}
@@ -32,13 +33,15 @@ const Swap: React.FC = () => {
         <div className="mb-5 ">
           <label className="block text-black">From (estimated)</label>
           <div className="mt-1 relative rounded-md shadow-sm ">
+            
             <input
               type="text"
               placeholder="0.0"
-              className="form-input block w-full pl-7 pr-12 sm:text-sm md:text-lg lg:text-xl h-20 rounded-lg bg-gradient-to-r from-gray-200 to-cyan-300"
+              className="form-input block w-full pl-7 pr-28 sm:text-sm md:text-lg lg:text-xl h-20 rounded-lg bg-gradient-to-r from-gray-200 to-cyan-300"
               value={inputAmount}
               onChange={(e) => setInputAmount(e.target.value)}
             />
+            
             <div className="absolute inset-y-0 right-0 flex items-center p-4">
               <label className="sr-only">Currency</label>
               <select
@@ -87,6 +90,7 @@ const Swap: React.FC = () => {
         </button>
       </div>
     </div>
+    </Animatedpage>
   );
 };
 

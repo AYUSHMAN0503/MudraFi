@@ -7,10 +7,11 @@ import {
     Input,
     Button,
   } from "@material-tailwind/react";
-   
+   import Animatedpage from "../AnimatedPage";
   export function Pool() {
 
     return (
+      <Animatedpage>
       <div className="justify-center items-center flex mt-20 mb-20">
       <Card className="w-96">
         <CardHeader
@@ -41,5 +42,6 @@ import {
        
       </Card>
       </div>
+      </Animatedpage>
     );
   }
