@@ -163,7 +163,6 @@ export function TransactionsTable() {
           </tbody>
         </table>
       </CardBody>
-      
     </Card>
   );
 }

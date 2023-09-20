@@ -42,14 +42,14 @@ const CTA = () => {
             width: "100%",
           }}
         >
-          <p className="text-6xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r bg-text">
+          <p className="text-5xl lg:text-6xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r bg-text">
             Trade Now
           </p>
           <p className="lg:text-2xl md:text-xl sm:text-lg mb-5 mt-0 text-white">
             Sync your crypto wallet to start
           </p>
           <button
-            className="bg-button text-white font-bold py-2 px-4 rounded-lg"
+            className="bg-button text-white py-2 px-4 rounded-lg"
             onClick={connectWallet}
           >
             Connect Wallet

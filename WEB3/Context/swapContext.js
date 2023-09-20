@@ -23,6 +23,7 @@ import { getPrice } from "../utils/fetchingPrice";
 import { swapUpdatePrice } from "../utils/swapUpdatePrice";
 
 export const SwapTokenContext = React.createContext();
+
 export const SwapTokenContextProvider = ({ children }) => {
   // USESTATE
 
@@ -118,7 +119,7 @@ export const SwapTokenContextProvider = ({ children }) => {
   }, []);
 
   //   single swap token
-  const singleSwapToken = async ({ token1, token2, swapAmount }) => {
+const singleSwapToken = async ({ token1, token2, swapAmount }) => {
     console.log(
       token1.tokenAddress.tokenAddress,
       token2.tokenAddress.tokenAddress,
@@ -190,4 +191,5 @@ export const SwapTokenContextProvider = ({ children }) => {
       {children}
     </SwapTokenContext.Provider>
   );
+
 };
