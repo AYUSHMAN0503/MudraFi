@@ -18,10 +18,10 @@ const Swap: React.FC = () => {
     maxWidth: "600px",
     margin: "0 auto",
     background: "#FFFFFF",
-    border: "3px solid blue",
+    border: "2px solid gray",
     borderRadius: "10px"
   };
-
+  
   return (
     <Animatedpage>
     <div className="flex items-center justify-center min-h-screen bg-app-bg">
