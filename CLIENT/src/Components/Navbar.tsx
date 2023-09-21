@@ -81,7 +81,7 @@ export function NavbarDefault() {
             color="blue-gray"
             className="p-1 font-normal"
           >
-            <a href="#" className="flex items-center text-xl text-white">
+            <a href="/AiDashboard" className="flex items-center text-xl text-white">
               AI Analytics
             </a>
           </Typography>
