@@ -1,16 +1,45 @@
 import React, { useState } from "react";
 import Animatedpage from "./AnimatedPage";
+import {ethers} from 'ethers';
+
+// import {connectingWithSingleSwapToken } from "./../../../WEB3/utils/appFeatures"; // Replace with the actual path to your backend file
+
 const Swap: React.FC = () => {
   const [inputToken, setInputToken] = useState("");
   const [outputToken, setOutputToken] = useState("");
   const [inputAmount, setInputAmount] = useState("");
   const [outputAmount, setOutputAmount] = useState("");
 
-  const handleSwap = () => {
-    // Swap logic here
-    setOutputAmount(inputAmount);
-    setInputAmount("");
+  const handleSwap= async () => {
+    try {
+      // Initialize an Ethereum provider (you may replace with Web3Modal or similar)
+      const provider = new ethers.providers.JsonRpcProvider(
+        "https://eth-mainnet.g.alchemy.com/v2/34qnSHH20zuO9wOM7dnJNd83zn1Pxr5W" // Replace with your Infura or Ethereum node URL
+      );
+
+      // Replace with your contract address
+      const contractAddress = "0xd9abC93F81394Bd161a1b24B03518e0a570bDEAd";
+
+      // Connect to the contract
+      const contract = new ethers.Contract(contractAddress, ["swapExactInputSingle"], provider);
+
+      // Call the swapExactInputSingle function
+      const result = await contract.swapExactInputSingle(inputToken, outputToken, inputAmount);
+
+      // Update state or perform other actions based on the result
+      setOutputAmount(result);
+
+      // Add any additional logic as needed
+    } catch (error) {
+      console.error("Error swapping:", error);
+    }
   };
+
+  // const handleSwap = () => {
+  //   // Swap logic here
+  //   setOutputAmount(inputAmount);
+  //   setInputAmount("");
+  // };
 
   const containerStyle = {
     boxShadow: "0 0 10px ",

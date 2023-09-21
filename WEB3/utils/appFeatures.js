@@ -12,7 +12,7 @@ import {
   SwapMultiHopABI,
   IWETHAddress,
   IWETHABI,
-} from "./Context/constants";
+} from "./../Context/constants";
 
 // Check if wallet is connected
 export const checkIfWalletConnected = async () => {
