@@ -4,6 +4,7 @@
     "ethereum-waffle": "^4.0.10"
   },
   "dependencies": {
+    "@aave/core-v3": "^1.18.0",
     "@ethersproject/bignumber": "^5.7.0",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "@openzeppelin/contracts": "^4.9.3",
