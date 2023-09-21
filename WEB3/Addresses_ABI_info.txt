@@ -3,7 +3,7 @@
 
 // Life Token address: 0xde79380FBd39e08150adAA5C6c9dE3146f53029e
 
-// SingleSwap address: 0xbFD3c8A956AFB7a9754C951D03C9aDdA7EC5d638
+// SingleSwap address: 0xd9abC93F81394Bd161a1b24B03518e0a570bDEAd
 
 // MultiHopSwap address: 0x38F6F2caE52217101D7CA2a5eC040014b4164E6C
 
