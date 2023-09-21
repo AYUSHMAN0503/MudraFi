@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { NavbarDefault } from "./Components/Navbar";
-import Footer from "./Components/Footer";
 import TermsOfService from "./Components/TermsOfService";
 import PrivacyPolicy from "./Components/Privacy Policy";
 import AboutUs from "./Components/AboutUs";

@@ -35,7 +35,7 @@ html,body{
    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
 
- .bg-blue-gradient {
+.bg-blue-gradient {
    background: linear-gradient(
     157.81deg,
     #def9fa -43.27%,
@@ -47,20 +47,16 @@ html,body{
   );
   }
 
-  .bg-button{
+.bg-button{
     background-color: #7fcec5;
     background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
-
   }
   
-  .bg-text{
+.bg-text{
     background-color: #09c7fb;
     background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
-    
-
   }
   
-
-  .bg-gray{
+.bg-gray{
 background-color: #232323;
   }
