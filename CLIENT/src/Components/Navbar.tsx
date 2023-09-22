@@ -38,9 +38,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center text-xl text-white">
+        <Link to="/tokens" className="flex items-center text-xl text-white">
           Tokens
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"

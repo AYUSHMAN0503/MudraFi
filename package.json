@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "@apollo/client": "^3.8.3",
-    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@heroicons/react": "^2.0.18",
+    "@material-tailwind/react": "^2.1.2",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
     "graphql": "^16.8.0",
     "web3": "^4.1.1"
   }
