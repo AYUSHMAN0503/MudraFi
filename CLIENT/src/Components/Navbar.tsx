@@ -20,6 +20,18 @@ export function NavbarDefault() {
     );
   }, []);
 
+  const connectWallet = () => {
+    if (window.ethereum) {
+      window.ethereum.request({ method: "eth_requestAccounts" });
+      // .then(result => {
+      //   accountChanged([result[0]])
+      // })
+    } else {
+      console.log("Install MetaMask please!!");
+      window.location.href = "https://metamask.io/";
+    }
+  };
+
   const navList1 = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-12">
       <Typography
@@ -57,41 +69,44 @@ export function NavbarDefault() {
       </Typography>
     </ul>
   );
-      const navList2 = (
-        <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-          <div className="relative flex w-full gap-2 md:w-max text-white">
-            <Input
-             
-              type="search"
-              label="Type here..."
-              className="pr-20"
-              containerProps={{
-                className: "min-w-[288px]",
-              
-              }}
-            />
-            <Button
-              size="sm"
-              color="blue"
-              className="!absolute right-1 top-1 rounded bg-button "
-            >
-              Search
-            </Button>
-          </div>
-          <Typography
-            as="li"
-            variant="small"
-            color="blue-gray"
-            className="p-1 font-normal"
-          >
-            <a href="/AiDashboard" className="flex items-center text-xl text-white">
-              AI Analytics
-            </a>
-          </Typography>
-          <Button className="bg-button h-12 rounded-lg  font-normal text-sm">Connect</Button>
-        </ul>
-      );
- 
+  const navList2 = (
+    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <div className="relative flex w-full gap-2 md:w-max text-white">
+        <Input
+          type="search"
+          label="Type here..."
+          className="pr-20"
+          containerProps={{
+            className: "min-w-[288px]",
+          }}
+        />
+        <Button
+          size="sm"
+          color="blue"
+          className="!absolute right-1 top-1 rounded bg-button "
+        >
+          Search
+        </Button>
+      </div>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <a href="/AiDashboard" className="flex items-center text-xl text-white">
+          AI Analytics
+        </a>
+      </Typography>
+      <Button
+        className="bg-button h-12 rounded-lg  font-normal text-sm"
+        onClick={connectWallet}
+      >
+        Connect
+      </Button>
+    </ul>
+  );
+
   return (
     <Navbar className="max-w-full bg-black/30 backdrop-blur-md  text-white/90 fixed rounded-2xl mt-1.5 py-2 px-6 lg:px-20 lg:py-4 z-10 border-none">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
