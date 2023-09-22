@@ -5,7 +5,7 @@ const AiDashboard = () => {
     
   return (
     <div className="bg-app-bg min-h-screen flex flex-col lg:flex-row">
-      <aside id="sidebar" className="fixed z-20 h-20 lg:h-full top-0 left-0 mt-12 mb-6 flex flex-col w-full lg:w-64 transition-all duration-200 bg-app-bg" aria-label="Sidebar">
+      <aside id="sidebar" className="h-auto lg:h-full top-0 left-0 mt-6 mb-6 flex flex-col lg:w-64 transition-all duration-200 rounded-xl bg-gray ml-3 mr-3 lg:mr-0" aria-label="Sidebar">
         <div className="relative flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
           <div className="flex-1 px-3 bg-app-bg divide-y space-y-1">
             <ul className="space-y-2 pb-2">
@@ -42,7 +42,7 @@ const AiDashboard = () => {
 
       {/* Main content */}
       <div className="bg-gray-900 opacity-50 hidden fixed inset-0 z-10" id="sidebarBackdrop"></div>
-      <div id="main-content" className="h-full w-full bg-app-bg relative overflow-y-auto lg:ml-64">
+      <div id="main-content" className="h-full w-full bg-app-bg relative overflow-y-auto ">
         <main>
           <div className="pt-6 px-4">
             <div className="w-full grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 gap-4">
