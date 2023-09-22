@@ -6,20 +6,20 @@ import {
   Typography,
   IconButton,
   Button,
-  Input
+  Input,
 } from "@material-tailwind/react";
- import Logo from "../../logo/logo-no-background.png"
- import {Link} from"react-router-dom";
+import Logo from "../../logo/logo-no-background.png";
+import { Link } from "react-router-dom";
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
- 
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false),
+      () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
- 
+
   const navList1 = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-12">
       <Typography
@@ -28,7 +28,10 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/SwapInterface" className="flex items-center text-xl text-white">
+        <Link
+          to="/SwapInterface"
+          className="flex items-center text-xl text-white"
+        >
           Swap
         </Link>
       </Typography>
@@ -81,7 +84,7 @@ export function NavbarDefault() {
             color="blue-gray"
             className="p-1 font-normal"
           >
-            <a href="#" className="flex items-center text-xl text-white">
+            <a href="/AiDashboard" className="flex items-center text-xl text-white">
               AI Analytics
             </a>
           </Typography>
@@ -92,10 +95,12 @@ export function NavbarDefault() {
   return (
     <Navbar className="max-w-full bg-black/30 backdrop-blur-md  text-white/90 fixed rounded-2xl mt-1.5 py-2 px-6 lg:px-20 lg:py-4 z-10 border-none">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-      <div className="hidden lg:block">{navList1}</div>
-      <Link to="/"><img src={Logo} alt="" width={200} /></Link>
-      <div className="hidden lg:block">{navList2}</div>
-        
+        <div className="hidden lg:block">{navList1}</div>
+        <Link to="/">
+          <img src={Logo} alt="" width={200} />
+        </Link>
+        <div className="hidden lg:block">{navList2}</div>
+
         <IconButton
           variant="text"
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -108,7 +113,7 @@ export function NavbarDefault() {
               fill="none"
               className="h-6 w-6"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="White"
               strokeWidth={2}
             >
               <path
@@ -122,7 +127,7 @@ export function NavbarDefault() {
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
               fill="none"
-              stroke="currentColor"
+              stroke="White"
               strokeWidth={2}
             >
               <path
@@ -136,11 +141,10 @@ export function NavbarDefault() {
       </div>
       <MobileNav open={openNav}>
         <div className="container mx-auto">
-          {navList1}{navList2}
-          </div>
+          {navList1}
+          {navList2}
+        </div>
       </MobileNav>
-
     </Navbar>
-    
   );
 }

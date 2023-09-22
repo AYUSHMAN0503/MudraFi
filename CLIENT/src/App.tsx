@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { NavbarDefault } from "./Components/Navbar";
-import Footer from "./Components/Footer";
 import TermsOfService from "./Components/TermsOfService";
 import PrivacyPolicy from "./Components/Privacy Policy";
 import AboutUs from "./Components/AboutUs";
@@ -11,6 +10,7 @@ import Bottom from "./Components/Bottom";
 import Tokens from "./Components/Tokens";
 import LiquidityPool from "./Components/Pool/PoolHome";
 import { Pool } from "./Components/Pool/PoolPage";
+import AiDashboard from "./Components/AI Analytics/AiDashboard";
 const App = () => {
   return (
     <div >
@@ -28,10 +28,9 @@ const App = () => {
           <Route path="/Pool" element={<LiquidityPool/>} />
           <Route path="/Pools" element={<Pool/>} />
           <Route path="/tokens" element={<Tokens />} />
-
+          <Route path="/AiDashboard" element={<AiDashboard/>} />
         </Routes>
-
-  <Bottom/>
+       <Bottom/>
       </Router>
     </div>
   );

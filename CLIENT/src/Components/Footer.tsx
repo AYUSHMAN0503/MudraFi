@@ -5,20 +5,17 @@ const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
-
- 
-
   return (
     <div>
       <div
         className="flex items-end w-full  "
         style={{
-         backgroundSize: "cover",
+          backgroundSize: "cover",
           backgroundPosition: "bottom",
           width: "100%",
         }}
       >
-        <footer className="w-full text-gray-700 body-font  p-0 slg:p-5 lg:p-5">
+        <footer className="w-full text-gray-700 lg:p-5">
           <div className="container flex flex-col flex-wrap px-5 pt-20 pb-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
             <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
               <a className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
@@ -32,36 +29,64 @@ const Footer = () => {
               </p>
               <div className="mt-4">
                 <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-                  <a className="text-white cursor-pointer" href="https://youtube.com/">
-                  <svg style={{color: 'red'}} xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-youtube w-7 h-7" viewBox="0 0 16 16"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" fill="red"></path> </svg>
+                  <a
+                    className="text-white cursor-pointer"
+                    href="https://youtube.com/"
+                  >
+                    <svg
+                      style={{ color: "red" }}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      className="bi bi-youtube w-7 h-7"
+                      viewBox="0 0 16 16"
+                    >
+                      {" "}
+                      <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                        fill="red"
+                      ></path>{" "}
+                    </svg>
                   </a>
-                  
-                  <a className="ml-3 text-white cursor-pointer" href="https://github.com/">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-6 h-6" viewBox="0 0 64 64">
+
+                  <a
+                    className="ml-3 text-white cursor-pointer"
+                    href="https://github.com/"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      className="w-6 h-6"
+                      viewBox="0 0 64 64"
+                    >
                       <path d="M32 0a32.021 32.021 0 0 0-10.1 62.4c1.6.3 2.2-.7 2.2-1.5v-6c-8.9 1.9-10.8-3.8-10.8-3.8-1.5-3.7-3.6-4.7-3.6-4.7-2.9-2 .2-1.9.2-1.9 3.2.2 4.9 3.3 4.9 3.3 2.9 4.9 7.5 3.5 9.3 2.7a6.93 6.93 0 0 1 2-4.3c-7.1-.8-14.6-3.6-14.6-15.8a12.27 12.27 0 0 1 3.3-8.6 11.965 11.965 0 0 1 .3-8.5s2.7-.9 8.8 3.3a30.873 30.873 0 0 1 8-1.1 30.292 30.292 0 0 1 8 1.1c6.1-4.1 8.8-3.3 8.8-3.3a11.965 11.965 0 0 1 .3 8.5 12.1 12.1 0 0 1 3.3 8.6c0 12.3-7.5 15-14.6 15.8a7.746 7.746 0 0 1 2.2 5.9v8.8c0 .9.6 1.8 2.2 1.5A32.021 32.021 0 0 0 32 0z"></path>
                     </svg>
                   </a>
                 </span>
               </div>
-
             </div>
             <div className="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left justify-end text-lg">
               <div className="w-full px-4 lg:w-1/4 md:w-1/2">
                 <nav className="mb-10 list-none">
                   <li className="mt-3">
-                    <Link 
+                    <Link
                       to="/SwapInterface"
                       className="text-white cursor-pointer"
                       onClick={scrollToTop}
-                      >
-                        Swap
-                      </Link>
+                    >
+                      Swap
+                    </Link>
                   </li>
                   <li className="mt-3">
                     <a className="text-white cursor-pointer">Tokens</a>
                   </li>
                   <li className="mt-3">
-                    <Link to="/Pool" className="text-white cursor-pointer"onClick={scrollToTop}>Pools</Link>
+                    <Link
+                      to="/Pool"
+                      className="text-white cursor-pointer"
+                      onClick={scrollToTop}
+                    >
+                      Pools
+                    </Link>
                   </li>
                 </nav>
               </div>
@@ -71,12 +96,12 @@ const Footer = () => {
                     <a className="text-white cursor-pointer">AI Analytics </a>
                   </li>
                   <li className="mt-3">
-                    <Link 
+                    <Link
                       to="/AboutUs"
                       className="text-white cursor-pointer"
                       onClick={scrollToTop}
-                      >
-                        About us
+                    >
+                      About us
                     </Link>
                   </li>
                 </nav>
@@ -103,11 +128,11 @@ const Footer = () => {
                   </li>
                   <li className="mt-3">
                     <Link
-                      to="/ReviewPage" 
+                      to="/ReviewPage"
                       className="text-white cursor-pointer"
                       onClick={scrollToTop}
-                      >
-                        Review
+                    >
+                      Review
                     </Link>
                   </li>
                 </nav>
