@@ -7,6 +7,7 @@ import ReviewPage from "./Components/ReviewPage";
 import SwapInterface from "./Components/SwapInterface";
 import Home from "./Components/Home";
 import Bottom from "./Components/Bottom";
+import Tokens from "./Components/Tokens";
 import LiquidityPool from "./Components/Pool/PoolHome";
 import { Pool } from "./Components/Pool/PoolPage";
 import AiDashboard from "./Components/AI Analytics/AiDashboard";
@@ -26,14 +27,10 @@ const App = () => {
           <Route path="/SwapInterface" element={<SwapInterface />} />
           <Route path="/Pool" element={<LiquidityPool/>} />
           <Route path="/Pools" element={<Pool/>} />
+          <Route path="/tokens" element={<Tokens />} />
           <Route path="/AiDashboard" element={<AiDashboard/>} />
-
-
-
-
         </Routes>
-
-  <Bottom/>
+       <Bottom/>
       </Router>
     </div>
   );
