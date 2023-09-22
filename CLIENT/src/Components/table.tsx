@@ -123,8 +123,8 @@ const TABLE_ROWS = [
 
 function Table() {
   return (
-    <Card className="h-full w-full">
-      <CardBody className="overflow-scroll px-0 py-0 rounded-lg">
+    <Card className="h-full w-full bg-transparent">
+      <CardBody className="overflow-auto px-0 py-0 rounded-xl">
         <table className="w-full min-w-max table-auto text-left bg-[#2d3436] bg-gradient-to-tl from-[#2d3436] from-0% to-[#000000] to-74%">
           <thead>
             <tr>
