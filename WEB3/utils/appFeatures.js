@@ -92,7 +92,7 @@ export const fetchSingleSwapContract = (signerorProvider) =>
     signerorProvider
   );
 
-// Connecting with Boo token
+// Connecting with singleSwap
 export const connectingWithSingleSwapToken = async () => {
   try {
     const web3modal = new Web3Modal();

@@ -118,8 +118,8 @@ export const SwapTokenContextProvider = ({ children }) => {
     fetchingData();
   }, []);
 
-  //   single swap token
-const singleSwapToken = async ({ token1, token2, swapAmount }) => {
+    // single swap token
+    const singleSwapToken = async ({ token1, token2, swapAmount }) => {
     console.log(
       token1.tokenAddress.tokenAddress,
       token2.tokenAddress.tokenAddress,
