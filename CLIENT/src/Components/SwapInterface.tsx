@@ -7,27 +7,27 @@ import { SwapTokenContext } from "./../../../WEB3/Context/swapContext";
 
 // import {connectingWithSingleSwapToken } from "./../../../WEB3/utils/appFeatures"; // Replace with the actual path to your backend file
 const Swap: React.FC = () => {
-  const {
-    singleSwapToken,
-    ConnectWallet,
-    getPrice,
-    swapUpdatePrice,
-    account,
-    weth9,
-    dai,
-    networkConnect,
-    ether,
-    tokenData,
-  } :{singleSwapToken:any,
-    ConnectWallet:any,
-    getPrice:any,
-    swapUpdatePrice:any,
-    account:any,
-    weth9:any,
-    dai:any,
-    networkConnect:any,
-    ether:any,
-    tokenData:any}= useContext(SwapTokenContext);
+  // const {
+  //   singleSwapToken,
+  //   ConnectWallet,
+  //   getPrice,
+  //   swapUpdatePrice,
+  //   account,
+  //   weth9,
+  //   dai,
+  //   networkConnect,
+  //   ether,
+  //   tokenData,
+  // } :{singleSwapToken:any,
+  //   ConnectWallet:any,
+  //   getPrice:any,
+  //   swapUpdatePrice:any,
+  //   account:any,
+  //   weth9:any,
+  //   dai:any,
+  //   networkConnect:any,
+  //   ether:any,
+  //   tokenData:any}= useContext(SwapTokenContext);
   const [inputToken, setInputToken] = useState("");
   const [outputToken, setOutputToken] = useState("");
   const [inputAmount, setInputAmount] = useState("");
