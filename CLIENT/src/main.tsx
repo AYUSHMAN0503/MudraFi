@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 import { ThemeProvider } from "@material-tailwind/react";
+import { SwapTokenContextProvider } from '../../WEB3/Context/swapContext.js';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider>
+      <SwapTokenContextProvider>
     <App />
+    </SwapTokenContextProvider>
     </ThemeProvider>
   </React.StrictMode>,
 )
