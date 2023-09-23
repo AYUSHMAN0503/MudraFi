@@ -18,7 +18,16 @@ const Swap: React.FC = () => {
     networkConnect,
     ether,
     tokenData,
-  } = useContext(SwapTokenContext);
+  } :{singleSwapToken:any,
+    ConnectWallet:any,
+    getPrice:any,
+    swapUpdatePrice:any,
+    account:any,
+    weth9:any,
+    dai:any,
+    networkConnect:any,
+    ether:any,
+    tokenData:any}= useContext(SwapTokenContext);
   const [inputToken, setInputToken] = useState("");
   const [outputToken, setOutputToken] = useState("");
   const [inputAmount, setInputAmount] = useState("");
@@ -51,6 +60,16 @@ const Swap: React.FC = () => {
 
   const handleSwap = () => {
     // Swap logic here
+    // singleSwapToken()     uncomment these to remove errors
+    // ConnectWallet()
+    // getPrice()
+    // swapUpdatePrice()
+    // account()
+    // weth9()
+    // dai()
+    // networkConnect()
+    // ether()
+    // tokenData()
     setOutputAmount(inputAmount);
     setInputAmount("");
   };
