@@ -10,14 +10,14 @@ Idea:
 We will create a decentralized platform that allows users to save and invest their assets in a transparent and accessible manner using Blockchain tech.
 
 
-## Features
+## ✨ Features
 
 - Market Sentiment Analysis using ML.
 - Risk Assessment.
 - Swapping, Pools and AI analytics
 
 
-## Run Locally
+## 🏆 Run Locally
 
 Clone the project
 
@@ -44,7 +44,7 @@ Start the server
 ```
 
 
-## Contributing
+## 🥇 Contributing
 
 Contributions are always welcome!
 
@@ -92,7 +92,7 @@ Now, go to the original repository on GitHub and create a pull request from your
 
 
 
-## Documentation
+## 💰 Documentation
 
 [React+Typescript](https://react-typescript-cheatsheet.netlify.app/)
 
