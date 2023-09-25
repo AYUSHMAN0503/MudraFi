@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   Navbar,
@@ -11,6 +11,7 @@ import {
 import Logo from "../../logo/logo-no-background.png";
 import { Link } from "react-router-dom";
 export function NavbarDefault() {
+  const [isConnected, setIsConnected] = useState(false);
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -22,16 +23,19 @@ export function NavbarDefault() {
 
   const connectWallet = () => {
     if (window.ethereum) {
-      window.ethereum.request({ method: "eth_requestAccounts" });
-      // .then(result => {
-      //   accountChanged([result[0]])
-      // })
+      window.ethereum
+        .request({ method: "eth_requestAccounts" })
+        .then(() => {
+          setIsConnected(true); // Set the state to indicate that the wallet is connected
+        })
+        .catch((error) => {
+          console.error("Error connecting wallet:", error);
+        });
     } else {
       console.log("Install MetaMask please!!");
       window.location.href = "https://metamask.io/";
     }
   };
-
   const navList1 = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-12">
       <Typography
@@ -102,7 +106,7 @@ export function NavbarDefault() {
         className="bg-button h-12 rounded-lg  font-normal text-sm"
         onClick={connectWallet}
       >
-        Connect
+        {isConnected ? "Metamask Wallet" : "Connect"}
       </Button>
     </ul>
   );
