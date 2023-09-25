@@ -75,12 +75,18 @@ const Swap: React.FC = () => {
   };
 
   const containerStyle = {
-    boxShadow: "0 0 10px ",
+    boxShadow: `
+    0 0 15px rgba(80, 64, 77, 0.6),
+    0 0 30px rgba(80, 64, 77, 0.7),
+    0 0 50px rgba(80, 64, 77, 0.4),
+    0 0 60px rgba(80, 64, 77, 0.5),
+    0 0 150px rgba(82, 65, 68, 0.9)`,
+
     width: "90%",
     maxWidth: "600px",
     margin: "0 auto",
-    background: "#FFFFFF",
-    border: "2px solid gray",
+    background: "#ffffff",
+    //border: "2px solid black",
     borderRadius: "10px"
   };
   
@@ -89,7 +95,7 @@ const Swap: React.FC = () => {
     <div className="flex items-center justify-center min-h-screen bg-app-bg">
       <div
         style={containerStyle}
-        className="container mx-auto p-5 border-3 shadow-xl hover:shadow-2xl transition duration-500 ease-in-out rounded-lg "
+        className="container mx-auto p-5 border-3 shadow-xl hover:shadow-2xl transition duration-500 ease-in-out rounded-lg"
       >
         <h1 className="text-3xl font-bold mb-5 text-blue-400">Swap</h1>
         <div className="mb-5 ">
@@ -99,7 +105,7 @@ const Swap: React.FC = () => {
             <input
               type="text"
               placeholder="0.0"
-              className="form-input block w-full pl-7 pr-28 sm:text-sm md:text-lg lg:text-xl h-20 rounded-lg bg-gradient-to-r from-gray-200 to-cyan-300"
+              className="form-input block w-full pl-7 pr-28 sm:text-sm md:text-lg lg:text-xl h-20 rounded-lg bg-gradient-to-r from-gray-200 to-gray-300"
               value={inputAmount}
               onChange={(e) => setInputAmount(e.target.value)}
             />
@@ -125,7 +131,7 @@ const Swap: React.FC = () => {
             <input
               type="text"
               placeholder="0.0"
-              className="form-input block w-full pl-7 pr-12 sm:text-sm md:text-lg lg:text-xl h-20 rounded-lg  bg-gradient-to-r from-gray-200 to-cyan-300"
+              className="form-input block w-full pl-7 pr-12 sm:text-sm md:text-lg lg:text-xl h-20 rounded-lg  bg-gradient-to-r from-gray-200 to-gray-300"
               value={outputAmount}
               readOnly
             />
