@@ -45,4 +45,3 @@ const Business: React.FC = () => (
 );
 
 export default Business;
-

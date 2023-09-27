@@ -2,12 +2,19 @@ const express = require("express");
 const mongoose = require("mongoose");
 const { graphqlHTTP } = require("express-graphql");
 const { GraphQLObjectType, GraphQLSchema, GraphQLString, GraphQLList } = require("graphql");
+const cors = require("cors");
+
 
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// MongoDB Connection:: daalna hai abhi
-mongoose.connect("mongodb://localhost", {
+app.use(cors({ origin: "http://localhost:5173" }));
+
+
+//MongoDB connection URI
+const mongoDBURI = `mongodb+srv://ayushmanmohanty0503:RQbnkjhmeFYkolS1@cluster0.hxe3c1r.mongodb.net/`;
+
+mongoose.connect(mongoDBURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -56,6 +63,8 @@ const schema = new GraphQLSchema({
   query: RootQuery,
   mutation: Mutation,
 });
+
+app.use(cors());
 
 app.use(
   "/graphql",

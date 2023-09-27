@@ -14,21 +14,32 @@ const ReviewPage: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    console.log("Form submitted"); 
+
+    
     if (!name || !email || !review) {
       alert("Please fill in all fields.");
       return;
     }
-
+  
     try {
-      // GraphQL mutation 
-      await addReview({ variables: { name, email, review } });
-      console.log("Review added successfully!");
-      setFormData({ name: "", email: "", review: "" });
+      // GraphQL mutation
+      const result = await addReview({
+        variables: { name, email, review },
+      });
+  
+      if (result.data) {
+        // Assuming GraphQL mutation returns a successful response
+        console.log("Review added successfully!");
+        setFormData({ name: "", email: "", review: "" });
+      } else {
+        console.error("Error adding review:", result.errors);
+      }
     } catch (error) {
       console.error("Error adding review:", error);
     }
   };
-
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
