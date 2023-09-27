@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { NavbarDefault } from "./Components/Navbar";
-import TermsOfService from "./Components/TermsOfService";
-import PrivacyPolicy from "./Components/Privacy Policy";
-import AboutUs from "./Components/AboutUs";
-import ReviewPage from "./Components/ReviewPage";
-import SwapInterface from "./Components/SwapInterface";
+import TermsOfService from "./Components/footer/TermsOfService";
+import PrivacyPolicy from "./Components/footer/Privacy Policy";
+import AboutUs from "./Components/footer/AboutUs";
+import ReviewPage from "./Components/footer/ReviewPage";
+import SwapInterface from "./Components/swap/SwapInterface";
 import Home from "./Components/Home";
 import Bottom from "./Components/Bottom";
 import Tokens from "./Components/Tokens";

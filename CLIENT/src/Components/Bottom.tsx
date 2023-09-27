@@ -1,6 +1,6 @@
 import React from 'react'
 import CTA from './CTA'
-import Footer from './Footer'
+import Footer from './footer/Footer'
 
 const Bottom = () => {
     const backgroundImageUrl =

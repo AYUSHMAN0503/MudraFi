@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import AnimatedPage from "./AnimatedPage";
+import AnimatedPage from "../AnimatedPage";
 
 const TermsOfService: React.FC = () => {
   const [currentDate, setCurrentDate] = useState<string>('');

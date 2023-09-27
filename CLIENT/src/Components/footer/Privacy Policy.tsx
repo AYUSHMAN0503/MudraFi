@@ -1,5 +1,5 @@
 import React from 'react';
-import Animatedpage from './AnimatedPage';
+import Animatedpage from '../AnimatedPage';
 
 const PrivacyPolicy = () => {
   const today = new Date();

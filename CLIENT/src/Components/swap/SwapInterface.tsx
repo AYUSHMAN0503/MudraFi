@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useContext } from "react";
-import Animatedpage from "./AnimatedPage";
+import Animatedpage from "../AnimatedPage";
 import {ethers} from 'ethers';
-import { SwapTokenContextProvider } from './../../../WEB3/Context/swapContext';
-import { SwapTokenContext } from "./../../../WEB3/Context/swapContext";
+import { SwapTokenContextProvider } from '../../../../WEB3/Context/swapContext';
+import { SwapTokenContext } from "../../../../WEB3/Context/swapContext";
 
 // import {connectingWithSingleSwapToken } from "./../../../WEB3/utils/appFeatures"; // Replace with the actual path to your backend file
 const Swap: React.FC = () => {

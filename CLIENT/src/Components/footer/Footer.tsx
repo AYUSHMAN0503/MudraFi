@@ -1,4 +1,4 @@
-import Logo from "../../logo/logo-no-background.png";
+import Logo from "./logo-no-background.png"
 import { Link } from "react-router-dom";
 
 const Footer = () => {

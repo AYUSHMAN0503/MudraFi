@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
                 <Typewriter
                   options={{
                     strings: [
-                      '<span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-400">Investing</span>', 
+                      '<span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-400">Swapping</span>', 
                       '<span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">Trading</span>', 
                       '<span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-white">Asset Management</span>'
                     ],                

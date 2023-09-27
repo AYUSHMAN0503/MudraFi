@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
-import { ADD_REVIEW_MUTATION } from "../../../SERVER/graphql";
+import { ADD_REVIEW_MUTATION } from "../../../../SERVER/graphql";
 
 const ReviewPage: React.FC = () => {
   const [formData, setFormData] = useState({

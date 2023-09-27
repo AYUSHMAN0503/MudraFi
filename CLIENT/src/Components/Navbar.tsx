@@ -75,7 +75,7 @@ export function NavbarDefault() {
   );
   const navList2 = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <div className="relative flex w-full gap-2 md:w-max text-white">
+      {/* <div className="relative flex w-full gap-2 md:w-max text-white">
         <Input
           type="search"
           label="Type here..."
@@ -91,7 +91,7 @@ export function NavbarDefault() {
         >
           Search
         </Button>
-      </div>
+      </div> */}
       <Typography
         as="li"
         variant="small"
