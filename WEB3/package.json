@@ -1,6 +1,10 @@
 {
   "name": "hardhat-project",
   "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.7.1",
+    "@types/react": "^18.2.23",
+    "@types/react-dom": "^18.2.8",
     "ethereum-waffle": "^4.0.10"
   },
   "dependencies": {

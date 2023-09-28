@@ -17,7 +17,7 @@ import {
 // Check if wallet is connected
 export const checkIfWalletConnected = async () => {
   try {
-    if (!window.ethereum) return console.log("Install Metamusk");
+    if (!window.ethereum) return console.log("Install MetaMask");
     const accounts = await window.ethereum.request({
       method: "eth_accounts",
     });
@@ -31,7 +31,7 @@ export const checkIfWalletConnected = async () => {
 // Connect Wallet
 export const ConnectWallet = async () => {
   try {
-    if (!window.ethereum) return console.log("Install Metamusk");
+    if (!window.ethereum) return console.log("Install MetaMask");
     const accounts = await window.ethereum.request({
       method: "eth_requestAccounts",
     });
