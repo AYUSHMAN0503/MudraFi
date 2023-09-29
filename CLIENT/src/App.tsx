@@ -11,6 +11,8 @@ import Tokens from "./Components/Tokens";
 import LiquidityPool from "./Components/Pool/PoolHome";
 import { Pool } from "./Components/Pool/PoolPage";
 import AiDashboard from "./Components/AI Analytics/AiDashboard";
+import Future from "./Components/footer/future";
+
 const App = () => {
   return (
     <div >
@@ -29,6 +31,8 @@ const App = () => {
           <Route path="/Pools" element={<Pool/>} />
           <Route path="/tokens" element={<Tokens />} />
           <Route path="/AiDashboard" element={<AiDashboard/>} />
+          <Route path="/future" element={<Future/>} />
+
         </Routes>
        <Bottom/>
       </Router>

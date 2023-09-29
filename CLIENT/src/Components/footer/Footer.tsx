@@ -118,7 +118,7 @@ const Footer = () => {
                     </li>
                   <li className="mt-3">
                     <Link
-                      to="/"
+                      to="/Future"
                       className="text-white cursor-pointer"
                       onClick={scrollToTop}
                     >
