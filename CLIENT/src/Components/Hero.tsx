@@ -31,13 +31,9 @@ const Hero: React.FC = () => {
                 />
               </h1>
               <p className="mt-5 bg-clip-text text-transparent bg-gradient-to-r from-white to-white">
-              Tumhari Tasveer Ke Sahare Mausam Kayi Guzare, Mausami Na Samjho
-              Par Ishq Ko Humare, Nazron Ke Saamne Main aata Nahi Tumhare
-              Magar Rehte Ho Har Pal, Manzar Mein Tum Humare!!
-              Agar Ishq Se Hai Mila, Fir Dard Se Kya Gila, Iss Dard Mein Zindagi, Khush Haal Hai..
-              Yeh Dooriyan Filhaal Hain!
+              Welcome to Mudrafi, you're asset management dex. Here you can Swap, check prices and do a lot of things. You can also use ai tools containing in AI analytics
               </p>
-              <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+              <div className="mt-8 flex flex-wrap justify-center gap-y-4 gap-x-6">
                 <a
                   href="/SwapInterface"
                   className="relative flex h-11  items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"

@@ -77,7 +77,13 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mt-3">
-                    <a className="text-white cursor-pointer">Tokens</a>
+                  <Link
+                      to="/tokens"
+                      className="text-white cursor-pointer"
+                      onClick={scrollToTop}
+                    >
+                      Tokens
+                    </Link>
                   </li>
                   <li className="mt-3">
                     <Link
@@ -93,7 +99,13 @@ const Footer = () => {
               <div className="w-full px-4 lg:w-1/4 md:w-1/2">
                 <nav className="mb-10 list-none">
                   <li className="mt-3">
-                    <a className="text-white cursor-pointer">AI Analytics </a>
+                  <Link
+                      to="/AiDashboard"
+                      className="text-white cursor-pointer"
+                      onClick={scrollToTop}
+                    >
+                      AI Analytics
+                    </Link>
                   </li>
                   <li className="mt-3">
                     <Link
@@ -102,6 +114,15 @@ const Footer = () => {
                       onClick={scrollToTop}
                     >
                       About us
+                    </Link>
+                    </li>
+                  <li className="mt-3">
+                    <Link
+                      to="/"
+                      className="text-white cursor-pointer"
+                      onClick={scrollToTop}
+                    >
+                      Future
                     </Link>
                   </li>
                 </nav>

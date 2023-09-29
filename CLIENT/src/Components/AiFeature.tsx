@@ -36,7 +36,7 @@ const Business: React.FC = () => (
 
      
     </div>
-    <div id="" className={`${layout.sectionImg} flex-col`}>
+    <div id="" className={`flex-col`}>
       {features.map((feature, index) => (
         <FeatureCard key={feature.id} {...feature} index={index} />
       ))}
