@@ -45,7 +45,7 @@ export const useSingleSwap = () => {
 
       const decimal0 = 18;
       const inputAmount = swapAmount;
-      const amountIn: BigNumberish = ethers.utils.parseUnits(inputAmount, 18); 
+      const amountIn: BigNumberish = ethers.parseUnits(inputAmount, 18); 
 
       await weth.deposit({ value: amountIn });
       await weth.approve(singleSwapToken.address, amountIn);
@@ -60,8 +60,8 @@ export const useSingleSwap = () => {
       await transaction.wait();
 
       const balance = await dai.balanceOf(account);
-      const transferAmount: BigNumberish = ethers.utils.parseUnits(balance.toString(), 18);
-      const ethValue = ethers.utils.formatUnits(transferAmount, 18);
+      const transferAmount: BigNumberish = ethers.parseUnits(balance.toString(), 18);
+      const ethValue = ethers.formatUnits(transferAmount, 18);
       
       return ethValue;
 

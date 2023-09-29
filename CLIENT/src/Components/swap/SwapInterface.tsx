@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Animatedpage from "../AnimatedPage";
 import { useSingleSwap } from "../../../../WEB3/Context/useSingleSwap";
-import useTokenPrices from './../../../../WEB3/Context/prices';
-
 
 const Swap: React.FC = () => {
   const [inputToken, setInputToken] = useState("");
@@ -11,29 +9,25 @@ const Swap: React.FC = () => {
   const [outputAmount, setOutputAmount] = useState("");
   const { singleSwapToken } = useSingleSwap();
 
-  
 
   const handleSwap = async () => {
 
     try {
-
-      const result = await singleSwapToken({
-        token1: {tokenAddress: inputToken},
-        token2: {tokenAddress: outputToken},    
-        swapAmount: inputAmount    
-      });
-
-      const newOutputAmount = result.outputAmount;
-
-      setOutputAmount(newOutputAmount);
+      const result = await singleSwapToken();
+  
+      if (typeof result === "string") {
+        setOutputAmount(result);
+      } else {
+        setOutputAmount(result.outputAmount); 
+      }
+  
       setInputAmount("");
-
+  
     } catch (error) {
       console.log(error);
     }
-
+  
   };
-
 
   const containerStyle = {
     boxShadow: `
