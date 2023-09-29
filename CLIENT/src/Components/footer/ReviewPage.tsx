@@ -16,6 +16,7 @@ const ReviewPage: React.FC = () => {
     e.preventDefault();
     console.log("Form submitted"); 
 
+    
     if (!name || !email || !review) {
       alert("Please fill in all fields.");
       return;
@@ -27,7 +28,7 @@ const ReviewPage: React.FC = () => {
         variables: { name, email, review },
       });
   
-      if (result.data && result.data.addReview) {
+      if (result.data) {
         // Assuming GraphQL mutation returns a successful response
         console.log("Review added successfully!");
         setFormData({ name: "", email: "", review: "" });
@@ -47,19 +48,20 @@ const ReviewPage: React.FC = () => {
     });
   };
 
+
   return (
     <div className="container mx-auto p-5">
-      <h1 className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 text-center font-bold mb-4 p-2">
+      <h1 className="lg:text-6xl md:text-5xl sm:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 text-center font-bold mb-4 p-2">
         Write your Review
       </h1>
-      <div className="container mx-auto text-slate-400 p-2">
-        <p className="mx-auto justify-center text-white">
-          Cultivate your perspective in this space. We eagerly await your insights and reflections. Your valuable input is pivotal in fostering constructive discussions and enhancing our shared understanding. Please, share your thoughts and let's embark on a fruitful exchange of ideas.
+      <div className="container mx-auto text-white p-2">
+        <p className="mx-auto">
+        Cultivate your perspective in this space. We eagerly await your insights and reflections. Your valuable input is pivotal in fostering constructive discussions and enhancing our shared understanding. Please, share your thoughts and let's embark on a fruitful exchange of ideas.
         </p>
 
         <form onSubmit={handleSubmit}>
           <div className="mb-3 mt-5 p-2">
-            <label htmlFor="name" className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 font-semibold">
+            <label htmlFor="name" className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-400 font-semibold">
               Name
             </label>
             <input
@@ -75,7 +77,7 @@ const ReviewPage: React.FC = () => {
             />
           </div>
           <div className="mb-3 p-2">
-            <label htmlFor="email" className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 font-semibold">
+            <label htmlFor="email" className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-400 font-semibold">
               Email
             </label>
             <input
@@ -91,7 +93,7 @@ const ReviewPage: React.FC = () => {
             />
           </div>
           <div className="mb-3 p-2">
-            <label htmlFor="review" className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 font-semibold">
+            <label htmlFor="review" className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-400 font-semibold">
               Review
             </label>
             <textarea
@@ -108,7 +110,7 @@ const ReviewPage: React.FC = () => {
           <div className="mt-4 p-2">
             <button
               type="submit"
-              className={`bg-blue-500 hover:to-blue-800 text-white rounded px-4 py-2 ${
+              className={`bg-blue-500 text-white rounded px-4 py-2 ${
                 !name || !email || !review
                   ? "cursor-not-allowed opacity-50"
                   : ""

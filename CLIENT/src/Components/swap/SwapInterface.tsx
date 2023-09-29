@@ -1,32 +1,77 @@
 import React, { useState } from "react";
+import { useContext } from "react";
 import Animatedpage from "../AnimatedPage";
-import { useSingleSwap } from "../../../../WEB3/Context/useSingleSwap";
+import {ethers} from 'ethers';
+import { SwapTokenContextProvider } from '../../../../WEB3/Context/swapContext';
+import { SwapTokenContext } from "../../../../WEB3/Context/swapContext";
 
+// import {connectingWithSingleSwapToken } from "./../../../WEB3/utils/appFeatures"; // Replace with the actual path to your backend file
 const Swap: React.FC = () => {
+  // const {
+  //   singleSwapToken,
+  //   ConnectWallet,
+  //   getPrice,
+  //   swapUpdatePrice,
+  //   account,
+  //   weth9,
+  //   dai,
+  //   networkConnect,
+  //   ether,
+  //   tokenData,
+  // } :{singleSwapToken:any,
+  //   ConnectWallet:any,
+  //   getPrice:any,
+  //   swapUpdatePrice:any,
+  //   account:any,
+  //   weth9:any,
+  //   dai:any,
+  //   networkConnect:any,
+  //   ether:any,
+  //   tokenData:any}= useContext(SwapTokenContext);
   const [inputToken, setInputToken] = useState("");
   const [outputToken, setOutputToken] = useState("");
   const [inputAmount, setInputAmount] = useState("");
   const [outputAmount, setOutputAmount] = useState("");
-  const { singleSwapToken } = useSingleSwap();
 
+  // const handleSwap= async () => {
+  //   try {
+  //     // Initialize an Ethereum provider (you may replace with Web3Modal or similar)
+  //     const provider = new ethers.providers.JsonRpcProvider(
+  //       "https://eth-mainnet.g.alchemy.com/v2/34qnSHH20zuO9wOM7dnJNd83zn1Pxr5W" // Replace with your Infura or Ethereum node URL
+  //     );
 
-  const handleSwap = async () => {
+  //     // Replace with your contract address
+  //     const contractAddress = "0xd9abC93F81394Bd161a1b24B03518e0a570bDEAd";
 
-    try {
-      const result = await singleSwapToken();
-  
-      if (typeof result === "string") {
-        setOutputAmount(result);
-      } else {
-        setOutputAmount(result.outputAmount); 
-      }
-  
-      setInputAmount("");
-  
-    } catch (error) {
-      console.log(error);
-    }
-  
+  //     // Connect to the contract
+  //     const contract = new ethers.Contract(contractAddress, ["swapExactInputSingle"], provider);
+
+  //     // Call the swapExactInputSingle function
+  //     const result = await contract.swapExactInputSingle(inputToken, outputToken, inputAmount);
+
+  //     // Update state or perform other actions based on the result
+  //     setOutputAmount(result);
+
+  //     // Add any additional logic as needed
+  //   } catch (error) {
+  //     console.error("Error swapping:", error);
+  //   }
+  // };
+
+  const handleSwap = () => {
+    // Swap logic here
+    // singleSwapToken()     uncomment these to remove errors
+    // ConnectWallet()
+    // getPrice()
+    // swapUpdatePrice()
+    // account()
+    // weth9()
+    // dai()
+    // networkConnect()
+    // ether()
+    // tokenData()
+    setOutputAmount(inputAmount);
+    setInputAmount("");
   };
 
   const containerStyle = {
