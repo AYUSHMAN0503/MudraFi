@@ -10,10 +10,11 @@ import {
 } from "@material-tailwind/react";
 import Logo from "../../logo/logo-no-background.png";
 import { Link } from "react-router-dom";
+import Popup from "./Popup";
 export function NavbarDefault() {
-  const [isConnected, setIsConnected] = useState(false);
+  // const [isConnected, setIsConnected] = useState(false);
   const [openNav, setOpenNav] = React.useState(false);
-
+  const [showPopup, setShowPopup] = useState(false);
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -21,21 +22,6 @@ export function NavbarDefault() {
     );
   }, []);
 
-  const connectWallet = () => {
-    if (window.ethereum) {
-      window.ethereum
-        .request({ method: "eth_requestAccounts" })
-        .then(() => {
-          setIsConnected(true); // Set the state to indicate that the wallet is connected
-        })
-        .catch((error) => {
-          console.error("Error connecting wallet:", error);
-        });
-    } else {
-      console.log("Install MetaMask please!!");
-      window.location.href = "https://metamask.io/";
-    }
-  };
   const navList1 = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-12">
       <Typography
@@ -75,7 +61,7 @@ export function NavbarDefault() {
   );
   const navList2 = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      {/* <div className="relative flex w-full gap-2 md:w-max text-white">
+      <div className="relative flex w-full gap-2 md:w-max text-white">
         <Input
           type="search"
           label="Type here..."
@@ -91,7 +77,7 @@ export function NavbarDefault() {
         >
           Search
         </Button>
-      </div> */}
+      </div>
       <Typography
         as="li"
         variant="small"
@@ -104,10 +90,17 @@ export function NavbarDefault() {
       </Typography>
       <Button
         className="bg-button h-12 rounded-lg  font-normal text-sm"
-        onClick={connectWallet}
+        onClick={() => setShowPopup(true)}
       >
-        {isConnected ? "Metamask Wallet" : "Connect"}
+        Connect Wallet
       </Button>
+      {showPopup && (
+        <Popup
+          onClose={function (): void {
+            throw new Error("Function not implemented.");
+          }}
+        />
+      )}
     </ul>
   );
 
@@ -164,6 +157,7 @@ export function NavbarDefault() {
           {navList2}
         </div>
       </MobileNav>
+      {showPopup && <Popup onClose={() => setShowPopup(false)} />}
     </Navbar>
   );
 }
