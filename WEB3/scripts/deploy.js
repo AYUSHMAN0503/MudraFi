@@ -38,6 +38,15 @@ async function main(){
   
     console.log("MultiHopSwap address:", await swapMultiHop.getAddress());
 
+  // liquidityPool
+  const [Dex] = await ethers.getSigners();
+  
+  console.log("Deploying contracts with the account:", Dex.address);
+
+  const dex = await ethers.deployContract("liquidityPool");
+
+  console.log("liquidityPool address:", await dex.getAddress());
+
 };
 
 main()
@@ -45,4 +54,4 @@ main()
   .catch((error) => {
     console.error(error);
     process.exit(1);
-  });
+  });     
