@@ -1,0 +1,33 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from statsmodels.tsa.arima.model import ARIMA
+
+# Load or generate time series data
+data = pd.read_csv("C:\\Users\\mishi\\OneDrive\\Desktop\\crypto-markets.csv")
+
+data['date'] = pd.to_datetime(data['date'])
+
+# Extract the 'close' price column
+close_price = data['close']
+
+model = ARIMA(close_price, order=(5, 1, 0))
+results = model.fit()
+
+# Generate predictions
+forecast_steps = 30  
+forecast= results.forecast(steps=forecast_steps)
+
+# Create a time series line chart for observed and forecasted values
+plt.figure(figsize=(12, 6))
+plt.plot(data['date'], close_price, label='Observed', color='blue')
+forecast_dates = pd.date_range(start=data['date'].max(), periods=forecast_steps+1, freq='D')[1:]
+plt.plot(forecast_dates, forecast, label='Forecast', color='red')
+plt.title('Cryptocurrency Price Forecast (ARIMA)')
+plt.xlabel('Date')
+plt.ylabel('Price (USD)')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+
