@@ -1,0 +1,57 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import plotly.graph_objs as go
+from statsmodels.tsa.arima.model import ARIMA
+
+# Load or generate time series data
+data = pd.read_csv("C:\\Users\\mishi\\OneDrive\\Desktop\\crypto-markets.csv")
+
+data['date'] = pd.to_datetime(data['date'])
+
+# Extract the 'close' price column
+close_price = data['close']
+
+model = ARIMA(close_price, order=(5, 1, 0))
+results = model.fit()
+
+# Generate prediction
+forecast_steps = 30
+forecast = results.forecast(steps=forecast_steps)
+
+candlestick_data = data[['date', 'open', 'high', 'low', 'close']].copy()
+candlestick_data = candlestick_data.set_index('date')
+candlestick_data = candlestick_data.tail(forecast_steps + 1)
+forecast_dates = pd.date_range(start=data['date'].max(), periods=forecast_steps + 1, freq='D')[1:]
+forecast_df = pd.DataFrame({'Open': forecast,
+                            'High': forecast,
+                            'Low': forecast,
+                            'Close': forecast},
+                           index=forecast_dates)
+candlestick_data = pd.concat([candlestick_data, forecast_df])
+
+
+# Create the candlestick chart
+trace = go.Candlestick(x=candlestick_data.index,
+                       open=candlestick_data['Open'],
+                       high=candlestick_data['High'],
+                       low=candlestick_data['Low'],
+                       close=candlestick_data['Close'],
+                       name='Candlesticks')
+
+# Create the forecast line
+forecast_trace = go.Scatter(x=forecast_dates,
+                            y=forecast,
+                            mode='lines',
+                            name='Forecast',
+                            line=dict(color='red'))
+
+# Create the layout
+layout = go.Layout(title='Cryptocurrency Price Forecast (ARIMA)',
+                   yaxis=dict(title='Price (USD)'))
+
+# Create the figure
+fig = go.Figure(data=[trace, forecast_trace], layout=layout)
+
+# Show the figure
+fig.show()
