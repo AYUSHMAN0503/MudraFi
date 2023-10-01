@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 import {
   Navbar,
   MobileNav,
@@ -69,6 +69,7 @@ export function NavbarDefault() {
           containerProps={{
             className: "min-w-[288px]",
           }}
+          crossOrigin={undefined}
         />
         <Button
           size="sm"
@@ -88,12 +89,14 @@ export function NavbarDefault() {
           AI Analytics
         </a>
       </Typography>
-      <Button
-        className="bg-button h-12 rounded-lg  font-normal text-sm"
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="bg-cyan-400  text-black font-medium py-2 px-4  my-0.9 rounded-lg shadow-md shadow-white/60 "
         onClick={() => setShowPopup(true)}
       >
         Connect Wallet
-      </Button>
+      </motion.button>
       {showPopup && (
         <Popup
           onClose={function (): void {
