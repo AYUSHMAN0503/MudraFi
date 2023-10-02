@@ -6,11 +6,40 @@ interface PopupProps {
   onClose: () => void; // Function to close the popup
 }
 
+// ...
+
 const Popup: React.FC<PopupProps> = ({ onClose }) => {
   const [account, setAccount] = useState<string | null>(null);
   const [balance, setBalance] = useState<string | null>(null);
+  const [popupVisible, setPopupVisible] = useState<boolean>(false); // New state variable
   const popupRef = useRef<HTMLDivElement>(null);
-  const [popupVisible, setPopupVisible] = useState<boolean>(false);
+
+  const checkMetaMask = async () => {
+    if (window.ethereum) {
+      try {
+        const accounts = await window.ethereum.request({
+          method: "eth_accounts",
+        });
+        if (accounts.length > 0) {
+          setAccount(accounts[0]);
+          const balance = await window.ethereum.request({
+            method: "eth_getBalance",
+            params: [accounts[0], "latest"],
+          });
+          setBalance(balance);
+          setPopupVisible(true);
+        } else {
+          setPopupVisible(true); // Show popup content with "Connect MetaMask" button
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      console.log("Install MetaMask please!!");
+      window.location.href = "https://metamask.io/";
+    }
+  };
+
   const connectWallet = async () => {
     if (window.ethereum) {
       try {
@@ -35,6 +64,10 @@ const Popup: React.FC<PopupProps> = ({ onClose }) => {
   };
 
   useEffect(() => {
+    checkMetaMask();
+  }, []);
+
+  useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
         popupRef.current &&
@@ -50,35 +83,6 @@ const Popup: React.FC<PopupProps> = ({ onClose }) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [onClose]);
-
-  useEffect(() => {
-    // Check if MetaMask is installed
-    if (window.ethereum) {
-      // Check if the user is already logged in
-      window.ethereum
-        .request({ method: "eth_accounts" })
-        .then((accounts: string[]) => {
-          if (accounts.length > 0) {
-            setAccount(accounts[0]);
-            window.ethereum
-              .request({
-                method: "eth_getBalance",
-                params: [accounts[0], "latest"],
-              })
-              .then((balance: string) => {
-                setBalance(balance);
-                setPopupVisible(true);
-              })
-              .catch((error: unknown) => {
-                console.error("Error fetching balance:", error);
-              });
-          }
-        })
-        .catch((error: unknown) => {
-          console.error("Error fetching accounts:", error);
-        });
-    }
-  }, []);
 
   return (
     <AnimatePresence>
