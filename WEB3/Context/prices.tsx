@@ -1,21 +1,21 @@
-// prices.tsx
+// // prices.tsx
 
-import { useState, useEffect } from 'react';
-import { getTokenPrices } from './priceApi'; 
+// import { useState, useEffect } from 'react';
+// import { getTokenPrices } from './priceApi'; 
 
-export default function useTokenPrices() {
+// export default function useTokenPrices() {
 
-  const [prices, setPrices] = useState({});
+//   const [prices, setPrices] = useState({});
 
-  useEffect(() => {
-    const fetchPrices = async () => {
-      const prices = await getTokenPrices(['ETH', 'DAI']);
-      setPrices(prices);
-    }
+//   useEffect(() => {
+//     const fetchPrices = async () => {
+//       const prices = await getTokenPrices(['ETH', 'DAI']);
+//       setPrices(prices);
+//     }
 
-    fetchPrices();
-  }, []);
+//     fetchPrices();
+//   }, []);
 
-  return prices;
+//   return prices;
 
-}
+// }
