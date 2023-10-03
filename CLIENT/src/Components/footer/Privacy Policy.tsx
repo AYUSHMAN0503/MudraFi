@@ -1,4 +1,3 @@
-import React from 'react';
 import Animatedpage from '../AnimatedPage';
 
 const PrivacyPolicy = () => {

@@ -50,7 +50,7 @@ function Dropdown({ menuItems, title }: propsType) {
         </Button>
       </MenuHandler>
       <MenuList className="p-1">
-        {menuItems.map(({ label, icon }, key) => {
+        {menuItems.map(({ label, icon },) => {
           return (
             <MenuItem
               key={label}
