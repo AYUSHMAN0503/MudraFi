@@ -77,19 +77,7 @@ const timeFrames: timeFrames[] = [
         </div>
         {/* options */}
         <div className="w-full flex flex-row flex-wrap gap-2 py-4">
-          {/* dropdown 1 */}
-          <Dropdown menuItems={tokens} title={`Tokens`} />
-          {/* dropdown 2 */}
-          <Dropdown menuItems={timeFrames} title={`1D`} />
-          {/* search */}
-          <div className="w-50">
-            <Input
-              color="purple"
-              className="text-white"
-              label="username"
-              crossOrigin="anonymous"
-            />
-          </div>
+          
         </div>
         {/* Main Tokens Table */}
         <Table />

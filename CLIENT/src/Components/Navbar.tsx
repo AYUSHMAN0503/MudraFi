@@ -61,23 +61,7 @@ export function NavbarDefault() {
   );
   const navList2 = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <div className="relative flex w-full gap-2 md:w-max text-white">
-        <Input
-          type="search"
-          label="Type here..."
-          className="pr-20"
-          containerProps={{
-            className: "min-w-[288px]",
-          }}
-        />
-        <Button
-          size="sm"
-          color="blue"
-          className="!absolute right-1 top-1 rounded bg-button "
-        >
-          Search
-        </Button>
-      </div>
+      
       <Typography
         as="li"
         variant="small"

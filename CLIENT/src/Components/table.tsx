@@ -28,12 +28,12 @@ const TABLE_HEAD = ["Token name", "Price", "Change", "TVL", "Volume"];
 const TABLE_ROWS = [
   {
     img: "https://seeklogo.com/images/E/ethereum-logo-EC6CDBA45B-seeklogo.com.png",
-    tokenName: "ETH",
+    tokenName: "BTT",
     Price: "$1500",
-    Change: "-4.25%",
+    Change: "8.25%",
     TVL: "23/04/18",
     Volume: "$400.5M",
-    change: false
+    change: true
   },
   {
     img: "https://seeklogo.com/images/E/ethereum-logo-EC6CDBA45B-seeklogo.com.png",
@@ -46,12 +46,12 @@ const TABLE_ROWS = [
   },
   {
     img: "https://seeklogo.com/images/E/ethereum-logo-EC6CDBA45B-seeklogo.com.png",
-    tokenName: "ETH",
+    tokenName: "Solana",
     Price: "$1500",
-    Change: "-4.25%",
+    Change: "10.25%",
     TVL: "23/04/18",
     Volume: "$400.5M",
-    change: false
+    change: true
   },
   {
     img: "https://seeklogo.com/images/E/ethereum-logo-EC6CDBA45B-seeklogo.com.png",

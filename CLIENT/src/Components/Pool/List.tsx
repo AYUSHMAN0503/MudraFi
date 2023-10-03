@@ -16,7 +16,7 @@ const TABLE_HEAD = ["Name", "Network", "Liquidity", "Volume(24h)", "volume(7d)",
 const TABLE_ROWS = [
   {
     
-    Name:"USDC",
+    Name:"BTT",
     Network:"",
     Liquidity:"",
     Volume1:"",
@@ -32,7 +32,7 @@ const TABLE_ROWS = [
   },
   {
     
-    Name:"USDC",
+    Name:"BTT",
     Network:"",
     Liquidity:"",
     Volume1:"",
@@ -47,7 +47,7 @@ const TABLE_ROWS = [
     Volume2:"",
   },
   {
-    Name:"USDC",
+    Name:"BTT",
     Network:"",
     Liquidity:"",
     Volume1:"",

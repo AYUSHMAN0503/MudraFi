@@ -9,13 +9,14 @@ import Animatedpage from "../AnimatedPage";
 const LiquidityPool: React.FC = () => {
   // Mock data for the liquidity pool
   const liquidityPoolData = [
-    { token: "Ethereum (ETH)", amount:"_", icon:faEthereum, currency:"USDC"},
-    { token: "Bitcoin (BTC)", amount: "_", icon:faBitcoin, currency:"USDC" },
-    { token: "US Dollar (USD)", amount: "_", icon: faDollarSign , currency:"USDC"},
-    { token: "Ethereum (ETH)", amount: "_", icon:faEthereum, currency:"USDC" },
-    { token: "Bitcoin (BTC)", amount: "_", icon:faBitcoin  , currency:"USDC"},
-    { token: "US Dollar (USD)", amount: "_", icon: faDollarSign, currency:"USDC" },
-    { token: "Bitcoin (BTC)", amount: "_", icon:faBitcoin , currency:"USDC"},
+
+    { token: "BitTorrent(BTT)", amount: "_", icon: faDollarSign, currency:"USDC" },
+    { token: "BitTorrent(BTT)", amount: "_", icon: faDollarSign, currency:"USDC" },
+    { token: "BitTorrent(BTT)", amount: "_", icon: faDollarSign, currency:"USDC" },
+    { token: "BitTorrent(BTT)", amount: "_", icon: faDollarSign, currency:"USDC" },
+    { token: "BitTorrent(BTT)", amount: "_", icon: faDollarSign, currency:"USDC" },
+    { token: "BitTorrent(BTT)", amount: "_", icon: faDollarSign, currency:"USDC" },
+    { token: "BitTorrent(BTT)", amount: "_", icon: faDollarSign, currency:"USDC" },
     { token: "BitTorrent(BTT)", amount: "_", icon: faDollarSign, currency:"USDC" },
     // Add more tokens with different icons as needed
   ];

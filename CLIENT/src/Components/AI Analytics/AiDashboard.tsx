@@ -82,7 +82,7 @@ const AiDashboard = () => {
                                 <span className="font-semibold">BTT</span>
                               </td>
                               <td className="p-4 whitespace-nowrap text-sm font-normal text-blue-500">
-                                September 22, 2023
+                                October 1, 2023
                               </td>
                               <td className="p-4 whitespace-nowrap text-sm font-semibold text-gray-900">
                                 $2300
@@ -93,7 +93,7 @@ const AiDashboard = () => {
                                 <span className="font-semibold">USD</span>
                               </td>
                               <td className="p-4 whitespace-nowrap text-sm font-normal text-blue-500">
-                                September 22, 2023
+                                October 1, 2023
                               </td>
                               <td className="p-4 whitespace-nowrap text-sm font-semibold text-gray-900">
                                 $2300
@@ -104,7 +104,7 @@ const AiDashboard = () => {
                                 <span className="font-semibold">BTT</span>
                               </td>
                               <td className="p-4 whitespace-nowrap text-sm font-normal text-blue-500">
-                                September 22, 2023
+                                October 1, 2023
                               </td>
                               <td className="p-4 whitespace-nowrap text-sm font-semibold text-gray-900">
                                 $2300
@@ -115,7 +115,7 @@ const AiDashboard = () => {
                                 <span className="font-semibold">BTT</span>
                               </td>
                               <td className="p-4 whitespace-nowrap text-sm font-normal text-blue-500">
-                                September 22, 2023
+                                October 1, 2023
                               </td>
                               <td className="p-4 whitespace-nowrap text-sm font-semibold text-gray-900">
                                 $2300
@@ -126,7 +126,7 @@ const AiDashboard = () => {
                                 <span className="font-semibold">BTT</span>
                               </td>
                               <td className="p-4 whitespace-nowrap text-sm font-normal text-blue-500">
-                                September 22, 2023
+                                October 1, 2023
                               </td>
                               <td className="p-4 whitespace-nowrap text-sm font-semibold text-gray-900">
                                 $2300
@@ -208,14 +208,14 @@ const AiDashboard = () => {
                     <table className="items-center w-full bg-transparent border-collapse">
                         <thead>
                           <tr>
-                              <th className="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">Top cryptos</th>
+                              <th className="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">Cryptos to go up</th>
                               <th className="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">Vol</th>
                               <th className="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap min-w-140-px">(percentage)%</th>
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-100">
                           <tr className="text-blue-500">
-                              <th className="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">TRON</th>
+                              <th className="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">BTT</th>
                               <td className="border-t-0 px-4 align-middle text-xs font-medium text-gray-900 whitespace-nowrap p-4">5,649</td>
                               <td className="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
                                 <div className="flex items-center">
@@ -229,7 +229,7 @@ const AiDashboard = () => {
                               </td>
                           </tr>
                           <tr className="text-blue-500">
-                              <th className="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">JFK</th>
+                              <th className="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">BTC</th>
                               <td className="border-t-0 px-4 align-middle text-xs font-medium text-gray-900 whitespace-nowrap p-4">4,025</td>
                               <td className="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
                                 <div className="flex items-center">
@@ -306,6 +306,9 @@ const AiDashboard = () => {
                 <h3 className="text-xl leading-none font-bold text-gray-900 mb-10">Graph</h3>
                 <LineChart/>
   </div>*/}
+            </div>
+            <div className="text-bold texl-2xl text-white text-center">
+              <p> <span>Note:</span> Please note that this is the prototype and not functional as of now. We hope to see you soon!!! </p>
             </div>
           </div>
         </main>

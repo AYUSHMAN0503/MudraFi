@@ -147,15 +147,7 @@ const Footer = () => {
                       Terms of Service
                     </Link>
                   </li>
-                  <li className="mt-3">
-                    <Link
-                      to="/ReviewPage"
-                      className="text-white cursor-pointer"
-                      onClick={scrollToTop}
-                    >
-                      Review
-                    </Link>
-                  </li>
+                  
                 </nav>
               </div>
             </div>
