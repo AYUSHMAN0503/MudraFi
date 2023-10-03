@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { ethers, BigNumberish } from 'ethers';
 
 
-import { 
-  connectingWithIWTHToken,
-  connectingWithDAIToken,
-  connectingWithSingleSwapToken
-} from '../utils/appFeatures';
+// import { 
+//   connectingWithIWTHToken,
+//   connectingWithDAIToken,
+//   connectingWithSingleSwapToken
+// } from '../utils/appFeatures';
 
 // import { IWETHABI } from './constants';
 // import ERC20 from './ERC20.json';
