@@ -1,5 +1,4 @@
-import React from 'react';
-import Dropdown from './dropdown';
+
 import {
   CubeTransparentIcon,
   UserCircleIcon,
@@ -9,9 +8,7 @@ import {
   Cog6ToothIcon,
   InboxArrowDownIcon,
   LifebuoyIcon,
-  PowerIcon,
-  RocketLaunchIcon,
-  Bars2Icon,
+  
 } from "@heroicons/react/24/outline";
 
 import { Input } from "@material-tailwind/react";

@@ -3,7 +3,6 @@ import React from "react";
 
 import LiquidityPoolCard from "./PoolsCardLayout";
 import { faDollarSign,} from "@fortawesome/free-solid-svg-icons"; // Import icons
-import { faEthereum , faBitcoin } from "@fortawesome/free-brands-svg-icons";
 import { TransactionsTable } from "./List";
 import Animatedpage from "../AnimatedPage";
 const LiquidityPool: React.FC = () => {

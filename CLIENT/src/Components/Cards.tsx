@@ -1,9 +1,7 @@
-import React from "react";
 import Swap from "../assets/92.png"
 import Trading from "../assets/Trading-PNG.png"
 import AI from "../assets/png-artificial-intelligence-science-artificial-brain-d-5bd15b5a1b5ef6.6360244115404470661121.png"
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const Cards = () => {
   return (

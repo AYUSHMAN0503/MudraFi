@@ -5,8 +5,6 @@ import {
   MobileNav,
   Typography,
   IconButton,
-  Button,
-  Input,
 } from "@material-tailwind/react";
 import Logo from "../../logo/logo-no-background.png";
 import { Link } from "react-router-dom";

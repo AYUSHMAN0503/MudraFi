@@ -1,4 +1,3 @@
-import React from 'react'
 import CTA from './CTA'
 import Footer from './footer/Footer'
 
