@@ -22,20 +22,22 @@ const Hero: React.FC = () => {
                 <Typewriter
                   options={{
                     strings: [
-                      '<span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-400">Swapping</span>', 
-                      '<span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">Trading</span>', 
-                      '<span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-white">Asset Management</span>'
-                    ],                
+                      '<span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-400">Swapping</span>',
+                      '<span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">Trading</span>',
+                      '<span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-white">Asset Management</span>',
+                    ],
                     autoStart: true,
                     loop: true,
                   }}
                 />
               </h1>
               <p className="mt-5 bg-clip-text text-transparent bg-gradient-to-r from-white to-white">
-              Welcome to Mudrafi, you're asset management dex. Here you can Swap, check prices and do a lot of things. You can also use ai tools containing in AI analytics
+                Welcome to <b>MudraFi</b>, your asset management decentralized
+                exchange. Here, you can swap, trade, or add liquidity, all with
+                the assistance of AI-enabled advisory and recommendations.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                <Link 
+                <Link
                   to="/SwapInterface"
                   className="relative flex h-11  items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                 >
@@ -43,7 +45,6 @@ const Hero: React.FC = () => {
                     Get started
                   </span>
                 </Link>
-                
               </div>
             </div>
           </div>
