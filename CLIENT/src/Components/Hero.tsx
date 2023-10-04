@@ -1,6 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import Animatedpage from "./AnimatedPage";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
@@ -34,14 +35,14 @@ const Hero: React.FC = () => {
               Welcome to Mudrafi, you're asset management dex. Here you can Swap, check prices and do a lot of things. You can also use ai tools containing in AI analytics
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-y-4 gap-x-6">
-                <a
-                  href="/SwapInterface"
+                <Link 
+                  to="/SwapInterface"
                   className="relative flex h-11  items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                 >
                   <span className="relative text-base font-semibold  bg-clip-text text-transparent bg-gradient-to-r  bg-button ">
                     Get started
                   </span>
-                </a>
+                </Link>
                 
               </div>
             </div>
