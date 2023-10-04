@@ -89,7 +89,7 @@ const Swap: React.FC = () => {
   
   return (
     <Animatedpage>
-    <div className="flex items-center justify-center min-h-screen bg-app-bg">
+    <div className="flex items-center justify-center min-h-screen bg-app-bg ">
       <div
         style={containerStyle}
         className="container mx-auto p-5 border-3 shadow-xl hover:shadow-2xl transition duration-500 ease-in-out rounded-lg"
@@ -155,6 +155,7 @@ const Swap: React.FC = () => {
         </button>
       </div>
     </div>
+    <h2 className=" text-sm mt-10 sm:text-lg md:text-2xl lg:text-3xl justify-center flex bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600 font-semibold">NOTE : Frontend illustration only, Web3 connection Will be done soon.</h2>
     </Animatedpage>
   );
 };

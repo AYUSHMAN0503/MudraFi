@@ -25,12 +25,12 @@ const FeatureCard: React.FC<FeatureCardProps> = ({title, content, index }) => (
 );
 
 const Business: React.FC = () => (
-  <section id="features" className={`${layout.section}`}>
+  <section id="features" className={`${layout.section} mt-14 md:mt-0`}>
     <div id="" className={`${layout.sectionInfo}`}>
-      <h3 id="" className={`${styles.heading3} flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600`}> 
+      <h3 id="" className={`${styles.heading3} flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600  `}> 
         Dig deeper into WEB3 world by using
       </h3>
-      <h2 id="" className={`${styles.heading2} flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600`}>
+      <h2 id="" className={`${styles.heading2} flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600 mb-10 md:mb-0`}>
         AI Analytics
       </h2>
 
