@@ -50,7 +50,7 @@ const Footer = () => {
 
                   <a
                     className="ml-3 text-white cursor-pointer"
-                    href="https://github.com/AYUSHMAN0503/MudraFi"
+                    href="https://github.com/"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
