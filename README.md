@@ -17,32 +17,8 @@ We will create a decentralized platform that allows users to save and invest the
 - Swapping, Pools and AI analytics
 
 
-## 🏆 Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/AYUSHMAN0503/MudraFi
-```
-
-Go to the project directory
-
-```bash
-  cd MudraFi
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run dev
-```
-
+## 🏆 Description
+Will add soon
 
 ## 🥇 Contributing
 
@@ -92,11 +68,11 @@ Now, go to the original repository on GitHub and create a pull request from your
 
 
 
-## 💰 Documentation
+## 💰 Future of MudraFi
 
-[React+Typescript](https://react-typescript-cheatsheet.netlify.app/)
+- Web3 completion by connecting it to frontend i.e our smart contracts are deployed and we just needed to connect it to frontend!!
 
-[DeFi-Basics](https://www.investopedia.com/decentralized-finance-defi-5113835)
+
 
 
 

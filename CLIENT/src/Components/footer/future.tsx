@@ -15,10 +15,10 @@ const Future = () => {
             <div className="mt-16 justify-center mb-16">
                 <ul style={{ listStyleType: 'none', padding: 0, textAlign: 'center' }} className='text-white px-8 py-4 text-md md:lg lg:text-xl xl:text-2xl'>
                     <li className='mb-11'>
-                        &#8226; Web3 completion by connecting it to frontend!
+                        &#8226; Web3 completion by connecting it to frontend i.e our smart contracts are deployed and we just needed to connect it to frontend!!
                     </li>
                     <li className='mb-11'>
-                        &#8226; AI ANALYTICS initiaton by adding ml models to it
+                        &#8226; AI ANALYTICS initiaton by 
                     </li>
                     <li className='mb-11'>
                         &#8226; Improved speed for transactions.
