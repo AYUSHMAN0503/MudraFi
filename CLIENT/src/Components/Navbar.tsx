@@ -20,6 +20,10 @@ export function NavbarDefault() {
     );
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   const navList1 = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-12">
       <Typography
@@ -66,9 +70,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/AiDashboard" className="flex items-center text-xl text-white">
+        <Link to="/AiDashboard" className="flex items-center text-xl text-white">
           AI Analytics
-        </a>
+        </Link>
       </Typography>
       <motion.button
         whileHover={{ scale: 1.1 }}
@@ -92,7 +96,7 @@ export function NavbarDefault() {
     <Navbar className="max-w-full bg-black/30 backdrop-blur-md  text-white/90 fixed rounded-2xl mt-1.5 py-2 px-6 lg:px-20 lg:py-4 z-10 border-none">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <div className="hidden lg:block">{navList1}</div>
-        <Link to="/">
+        <Link to="/" onClick={scrollToTop}> 
           <img src={Logo} alt="" width={200} />
         </Link>
         <div className="hidden lg:block">{navList2}</div>

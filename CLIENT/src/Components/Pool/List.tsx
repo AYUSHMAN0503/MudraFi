@@ -54,7 +54,7 @@ const TABLE_ROWS = [
 ];
  
 export function TransactionsTable() {
-  return (
+  return (<>
     <Card className="h-full p-10 w-full bg-transparent shadow-none hidden sm:block">
       
       <CardBody className=" px-0 bg-gray rounded-lg">
@@ -162,5 +162,6 @@ export function TransactionsTable() {
         </table>
       </CardBody>
     </Card>
+     <h2 className=" text-sm mt-10 sm:text-lg md:text-2xl lg:text-3xl justify-center flex bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600 font-semibold">NOTE : Frontend illustration only, Web3 connection Will be done soon.</h2></>
   );
 }

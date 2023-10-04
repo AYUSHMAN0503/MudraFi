@@ -308,7 +308,7 @@ const AiDashboard = () => {
   </div>*/}
             </div>
             <div className="text-bold texl-2xl text-white text-center">
-              <p> <span>Note:</span> Please note that this is the prototype and not functional as of now. We hope to see you soon!!! </p>
+            <h2 className=" text-sm sm:text-lg md:text-2xl lg:text-3xl justify-center flex bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600 font-semibold">NOTE : Frontend illustration only, Web3 connection Will be done soon.</h2>
             </div>
           </div>
         </main>
