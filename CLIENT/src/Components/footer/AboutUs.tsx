@@ -116,7 +116,7 @@ const AboutUs: React.FC = () => {
         Our Team -- Web3 Sailors
       </h1>
       <p className="text-center text-xl text-green-500 mt-2">
-        The minds behind this incredible project!
+        Newly promoted sophomores and a freshie who are striving to make a difference!!
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">
         {teamMembers.map((member) => (
