@@ -1,4 +1,4 @@
-import Logo from "./logo-no-background.png"
+import Logo from "./logo-no-background.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -31,7 +31,7 @@ const Footer = () => {
                 <span className="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
                   <a
                     className="text-white cursor-pointer"
-                    href="https://youtube.com/"
+                    href="https://youtu.be/ayEHCzm4n40?si=-RlD-jFe2MYPq86g"
                   >
                     <svg
                       style={{ color: "red" }}
@@ -77,7 +77,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mt-3">
-                  <Link
+                    <Link
                       to="/tokens"
                       className="text-white cursor-pointer"
                       onClick={scrollToTop}
@@ -99,7 +99,7 @@ const Footer = () => {
               <div className="w-full px-4 lg:w-1/4 md:w-1/2">
                 <nav className="mb-10 list-none">
                   <li className="mt-3">
-                  <Link
+                    <Link
                       to="/AiDashboard"
                       className="text-white cursor-pointer"
                       onClick={scrollToTop}
@@ -115,7 +115,7 @@ const Footer = () => {
                     >
                       About us
                     </Link>
-                    </li>
+                  </li>
                   <li className="mt-3">
                     <Link
                       to="/Future"
@@ -147,7 +147,6 @@ const Footer = () => {
                       Terms of Service
                     </Link>
                   </li>
-                  
                 </nav>
               </div>
             </div>
